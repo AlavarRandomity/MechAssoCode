@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta lang="en" name="language" content="english">
+    <title>Contact Us | Mechanical Associates</title>
+      <!-- CSS stuff -->
+      <link type="text/css" rel="stylesheet" href="testMainCSS.css">
+      <link type="text/css" rel="stylesheet" href="jquery.qtip.css">
+      <link type="text/css" rel="stylesheet" href="jquery.qtip.min.css">
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+      <link rel="icon" href="PictureRefs/MAfavicon.png">
+
+      <style>
+          .content {
+             height: 400px;
+         }
+
+        #ContactForm {
+           padding-right: 50px;
+        }
+
+        #MAContactInformationStuffThingsYea {
+           padding-left: 50px;
+        }
+        /* ------------------------------- For Smaller Screens ------------------------------- */
+
+      @media screen and (max-width: 1591px) {
+         #footer {
+            position: static;
+         }
+      }
+
+      @media screen and (max-width: 1425px) {
+         #ContactForm {
+            padding-right: 0;
+         }
+
+         #MAContactInformationStuffThingsYea {
+           margin: 0 auto;
+           width: 100%;
+           display: block;
+           text-align: center;
+           border-top: 1px solid black;
+        }
+
+        #mainFrame {
+          width: 600px;
+          margin: 0 auto;
+        }
+
+        .content {
+         height: 740px;
+        }
+      }
+
+      @media screen and (max-width: 1352px) {
+         .content {
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-bottom: 7px;
+         }
+      }
+
+      @media screen and (max-width: 1331px) {
+         .content {
+            height: 735px;
+         }
+      }
+
+      @media screen and (max-width: 1330px) {
+        .links {
+            font-size: 20px;
+        }
+      }
+
+/*       @media screen and (max-width: 1236px) {
+        .content {
+            height: 725px;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        #ContactForm {
+            float: left;
+            padding-right: 0;
+        }
+
+        #MAContactInformationStuffThingsYea {
+            width: 350px;
+            margin: 0;
+            float: none;
+            text-align: left;
+Name: Jade Curtiss
+Birth name: Jade Balfour
+Age: 35 (37 after the events of Abyss)
+Gender: Male
+Birthday: Sylph-Redecan 22 (November 11)
+
+
+
+        } */
+
+        .bump {
+            margin-top: 70px;
+        }
+      }
+
+      @media screen and (max-width: 1064px) {
+        .links {
+            font-size: 18px;
+        }
+      }
+
+      @media screen and (max-width: 991px) {
+        #header {
+            height: 136px;
+            border-bottom: 0;
+        }
+
+        .content {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .links ul {
+            padding-left: 0;
+            padding-top: 0;
+        }
+
+        .links {
+            display: inline-block;
+            width: 100%;
+            text-align: left;
+            border-top: 1px solid white;
+        }
+
+        .links a {
+            padding-top: 20px;
+            padding-bottom: 8px;
+        }
+      }
+    </style>
+
+      <!-- JavaScript Code -->
+      <script src="javaScript/jquery-1.12.3.js"></script>
+      <script type="text/javascript" src="javaScript/jquery.qtip.js"></script>
+      <script type="text/javascript" src="javaScript/jquery.qtip.min.js"></script>
+      <script type="text/javascript" src="javaScript/states.js"></script>
+
+       <!-- Google+ -->
+      <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+      <!-- MORE SCRIPT -->
+      <script type="text/javascript">
+      // where the browser goes: "OH GOD, WHY WOULD YOU CHANGE THE SIZE OF YOUR BROWSER?! LEAVE IT AT FULL SCREEN, YOU MEANIE >:C"
+        function myFunction() {
+                document.getElementsByClassName("links")[0].classList.toggle("responsive");
+            }
+
+      // mobile call
+         // <!--
+           if (screen.width <= 699) {
+          document.location = "mobileContact.html";
+          } else if (screen.width >= 700 && screen.width <= 1074) {
+            document.location = "tabletContact.html"; }
+          //-->
+    </script>
+  </head>
+  <body>
+
+<!-- Start up the actual body stuff cause OH MY GOD ALL THIS CODE -->
+   <div id="container">
+      <div id="header">
+        <div id="header_navigation">
+            <span class="company_logo">
+                <a href="index.html" title="Mechanical Associates"><img src="PictureRefs/MechanicalAssociates_Logo.png" height="70" alt="Mechanical Associates Logo"/></a>
+            </span>
+          </div>
+            <div class="links">
+                <ul class="actualnavigation">
+                    <li><a href="index.html" title="Home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="News.html" title="News">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;News&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="AboutUs.html" title="About Us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="Products.html" title="Products">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Products&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="Resources.html" title="Resources">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resources&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="ContactUs.html" title="Contact Us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                </ul>
+            </div>
+    </div>
+    <div id="banner">
+            <img src="PictureRefs/contactBanner.png" alt="Contact Mechanical Associates"/>
+    </div>
+    <section id="main_content">
+      <div class="content" style="padding-top: 25px;"> <!-- change height to auto when NOT testing contact form -->
+        <div id="mainFrame">
+          <div id="ContactForm">
+                <form name="feedbackForm" method="post" id="feedbackForm" action="feedbackForm.php">
+                <input type="hidden" name="Alavar" value="login"/>
+                <b><u style="color: #b30000;">A field marked with (*) is required</u></b>
+
+              <p><label for="full_name">*Full Name: </label><br/>
+              <input type="text" size="20" name="full_name"/>
+              <p>
+
+              <label for="email_address">*Email Address:</label><br/>
+              <input type="text" size="20" name="email_address"/>
+              <p>
+
+              <label for="foundWebsite">How did you find us?</label><br/>
+                <select name="wordOfMouth">
+                  <option value="pleaseSelect" selected="">-- Please Select --</option>
+                  <option value="Google">Google/Google+</option>
+                  <option value="Facebook">Facebook</option>
+                  <option value="LinkedIn">LinkedIn</option>
+                  <option value="Twitter">Twitter</option>
+                  <option value="Representative">Representative</option>
+                  <option value="Other">Other</option>
+                </select><p style="margin: 0">
+              <label for="Feedback">*Feedback (Comments, Questions, etc.):</label><br/>
+              <textarea rows="5" cols="50" name="feedback_area"></textarea><p style="margin: 0">
+                  <input type="checkbox" id="newsletter" name="newsletter" value="Yes" checked/><label for="newsletter">Yes, I would like to subscribe to Mechanical Associates' monthly newsletter!</label>
+                  <p style="margin-bottom: 0"></p>
+              <input type="submit" value="Send" name="submit"/><p>
+              </form>
+            </div>
+          </div>
+          <div id="MAContactInformationStuffThingsYea" style="padding-left: 0; padding-top: 5px">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="PictureRefs/MA-Logo-Full_Color.png" alt="Mechanical Associates Logo" style="display: block"/><p>
+              <b>Mechanical Associates</b><br/>
+              745 Broadway Street<br/>
+              Fresno, CA 93721<br/>
+              <i>phone: 559-272-8157</i><br/>
+              <i>email: <a href="mailto:sales@mechanical-associates.com?Subject=Feedback" target="_top">sales@mechanical-associates.com</a></i>
+              <div>
+                <p class="bump" style="text-align: center; font-size: 15px; margin-top: 55px">
+                  <b>Or contact your local representative!</b><br/>
+                  <i>See map below and click on your state<br/> to see the representative in that area.</i>
+                </p>
+              </div>
+            </div>
+          </div>
+         <div style="background-color: rgba(53, 87, 109, 0)">
+             <center><img src="PictureRefs/UnitedStates.gif" width="718" height="539" id="map" alt="Mechanical Associates Representative Map" usemap="#USA"/></center>
+         <div>
+
+                    <map name="USA" class="popup_div">
+                      <!-- North Eastern Region -->
+                        <area shape="poly" coords="650,86,658,115,662,119,664,108,668,104,674,101,677,94,685,90,692,86,693,77,689,76,686,70,683,68,680,63,676,52,671,47,669,47,664,49,660,49,660,47,657,54,654,65,655,74,652,80,650,85" href="http://www.bauhopkins.com" id="Maine" alt="Maine"/>
+                        <area shape="poly" coords="649,87,647,86,645,91,646,99,643,105,643,114,643,127,662,122,650,90" href="http://www.bauhopkins.com" id="NewHampshire" alt="New Hampshire"/>
+                        <area shape="poly" coords="644,92,626,97,630,118,635,131,642,128,644,96" href="http://www.bauhopkins.com" id="Vermont" alt="Vermont"/>
+                        <area shape="poly" coords="636,134,636,142,656,137,665,143,677,137,663,131,664,125,635,134" href="http://www.bauhopkins.com" id="Massachusetts" alt="Massachusetts"/>
+                        <area shape="poly" coords="658,136,654,137,658,149,666,143,660,139" href="http://www.bauhopkins.com" id="RhodeIsland" alt="Rhode Island"/>
+                        <area shape="poly" coords="656,148,638,158,637,145,654,141,656,148" href="http://www.bauhopkins.com" id="Connecticut" alt="Connecticut"/>
+                        <area shape="poly" coords="623,204,618,188,621,187,631,202,626,204" href="http://www.AandEAssociates.com" id="Delaware" alt="Delaware"/>
+                        <area shape="poly" coords="626,97,606,102,600,115,595,117,598,124,584,134,575,131,568,138,571,144,562,155,615,148,620,155,634,159,638,156,635,136,635,130,630,117,627,100" href="http://mechanical-associates.com" id="NewYork" alt="New York"/>
+                        <area shape="poly" coords="618,184,631,192,637,174,633,166,634,161,622,155,621,167,628,175,619,183" href="http://www.AandEAssociates.com" id="NewJersey" alt="New Jersey"/>
+                        <area shape="poly" coords="616,185,577,191,577,197,597,194,606,200,606,207,616,211,628,211,630,203,623,202,617,188" href="http://www.AandEAssociates.com" id="Maryland" alt="Maryland"/>
+                        <area shape="poly" coords="552,234,541,218,544,210,550,201,557,196,558,187,564,193,573,192,574,199,589,190,595,195,578,210,572,212,568,228,555,233" href="http://www.heritagewater.com/" id="WestVirginia" alt="West Virginia"/>
+                        <area shape="poly" coords="541,248,624,234,624,229,619,228,616,224,619,221,615,211,602,208,604,202,599,198,594,196,587,195,581,208,575,211,568,229,551,235,541,247" href="http://mechanical-associates.com" id="Virginia" alt="Viriginia"/>
+                        <area shape="poly" coords="563,155,566,158,613,148,622,156,620,169,627,175,621,183,618,182,616,185,562,194,554,161,563,154" href="http://www.AandEAssociates.com" id="Pennsylvania" alt="Pennsylvania"/>
+                        <area shape="poly" coords="552,161,533,173,521,169,507,171,512,212,524,217,534,215,540,219,544,209,552,202,558,195,560,193,553,165" href="http://www.wpkolens.com" id="Ohio" alt="Ohio"/>
+
+                      <!-- Middle Region -->
+                        <area shape="poly" coords="453,282,459,262,463,259,550,247,529,267,524,270,521,277,456,283" href="http://mechanical-associates.com" id="Tennessee" alt="Tennessee"/>
+                        <area shape="poly" coords="464,258,463,250,477,236,515,213,526,217,534,216,539,219,540,224,548,233,535,248,477,254,474,257,467,259" href="http://mechanical-associates.com" id="Kentucky" alt="Kentucky"/>
+                        <area shape="poly" coords="479,175,507,173,512,211,505,220,494,230,478,234,481,215,479,175" href="http://mechanical-associates.com" id="Indiana" alt="Indiana"/>
+                        <area shape="poly" coords="471,165,42,167,437,185,432,199,439,211,448,225,448,233,458,241,461,247,468,248,472,240,474,230,479,220,477,213,475,175,472,168" href="http://mechanical-associates.com" id="Illinois" alt="Illinois"/>
+                        <area shape="poly" coords="497,107,494,116,485,124,483,136,486,150,488,161,483,172,522,168,527,156,529,144,524,132,515,139,511,137,518,126,515,117,516,114,502,107,501,104,512,102,502,95,497,96,492,92,475,98,462,93,457,93,463,86,460,84,439,98,468,111,471,116,476,110,485,107,492,103,498,107" href="http://mechanical-associates.com" id="Michigan" alt="Michigan"/>
+                        <area shape="poly" coords="470,162,440,164,435,160,431,147,430,143,413,130,413,117,419,109,421,100,430,94,438,99,466,111,468,119,463,128,473,124,469,138,468,152,470,161" href="http://mechanical-associates.com" id="Wisconsin" alt="Wisconsin"/>
+                        <area shape="poly" coords="366,65,383,63,383,59,390,59,390,67,441,78,433,83,418,98,416,108,410,115,410,129,421,138,428,143,429,149,373,150,370,115,366,81,366,68" href="http://mechanical-associates.com" id="Minnesota" alt="Minnesota"/>
+                        <area shape="poly" coords="429,149,432,159,443,171,434,182,430,196,383,196,372,168,373,150,430,149" href="http://mechanical-associates.com" id="Iowa" alt="Iowa"/>
+                        <area shape="poly" coords="393,261,383,196,427,195,429,200,438,215,443,220,446,227,444,231,456,241,457,246,462,255,456,259,455,267,452,267,448,261,445,259,396,262" href="http://mechanical-associates.com" id="Missouri" alt="Missouri"/>
+                        <area shape="poly" coords="400,308,394,306,393,262,444,259,449,263,448,267,455,267,451,276,450,283,445,287,442,294,438,307,438,315,402,317,399,311" href="http://mechanical-associates.com" id="Arkansas" alt="Arkansas"/>
+                        <area shape="poly" coords="392,253,303,252,304,207,387,209,393,253" href="http://mechanical-associates.com" id="Kansas" alt="Kansas"/>
+                        <area shape="poly" coords="384,206,305,204,304,189,284,187,286,157,347,161,371,169,384,206" href="http://mechanical-associates.com" id="Nebraska" alt="Nebraska"/>
+                        <area shape="poly" coords="368,165,356,162,346,158,286,154,290,108,367,115,370,123,370,165" href="http://mechanical-associates.com" id="SouthDakota" alt="South Dakota"/>
+                        <area shape="poly" coords="290,60,363,63,363,78,369,112,290,108,292,63" href="http://mechanical-associates.com" id="NorthDakota" alt="North Dakota"/>
+                        <area shape="poly" coords="300,251,215,243,222,181,302,189,300,251" href="http://mechanical-associates.com" id="Colorado" alt="Colorado"/>
+                        <area shape="poly" coords="151,233,166,157,201,164,199,177,221,181,212,242,154,233" href="http://www.rckymtnvalve.com" id="Utah" alt="Utah"/>
+                        <area shape="poly" coords="285,126,210,117,199,174,280,186,285,129" href="http://mechanical-associates.com" id="Wyoming" alt="Wyoming"/>
+                        <area shape="poly" coords="169,43,289,60,285,123,207,114,207,117,188,117,181,97,175,97,180,82,171,69,167,57,168,48,169,46" href="http://mechanical-associates.com" id="Montana" alt="Montana"/>
+
+                      <!-- Southern Region -->
+                        <area shape="poly" coords="526,278,527,272,553,247,624,235,621,243,630,244,627,253,623,254,622,260,602,282,577,271,556,268,526,277" href="http://www.heritagewater.com/" id="NorthCarolina" alt="North Carolina"/>
+                        <area shape="poly" coords="577,314,599,281,585,271,572,272,567,268,561,268,553,269,540,274,549,286,576,314" href="http://www.heritagewater.com/" id="SouthCarolina" alt="South Carolina"/>
+                        <area shape="poly" coords="539,274,511,281,526,342,564,342,565,337,571,337,571,332,576,317,566,302,549,288,538,278" href="http://mechanical-associates.com" id="Georgia" alt="Georgia"/>
+                        <area shape="poly" coords="496,353,493,347,525,342,560,342,565,344,565,337,571,338,580,359,590,371,589,376,601,392,601,407,600,419,593,422,583,413,581,412,576,406,568,399,564,390,564,383,560,384,560,366,554,364,541,353,534,353,524,360,518,355,514,353,504,351,498,353" href="http://mechanical-associates.com" id="Florida" alt="Florida"/>
+                        <area shape="poly" coords="482,354,492,353,489,344,522,339,521,326,522,318,519,314,509,282,478,284,480,343,482,354" href="http://mechanical-associates.com" id="Alabama" alt="Alabama"/>
+                        <area shape="poly" coords="463,357,458,346,435,347,435,338,442,326,440,318,441,308,448,289,454,285,475,285,476,330,479,354,466,357" href="http://mechanical-associates.com" id="Mississippi" alt="Alabama">
+                        <area shape="poly" coords="402,316,438,316,443,326,437,335,436,347,459,346,462,357,471,375,438,370,432,365,426,370,405,368,406,357,407,343,401,330,402,319" href="http://www.coastalculvert.com" id="Louisiana" alt="Louisiana"/>
+                        <area shape="poly" coords="288,259,324,262,325,292,335,295,348,299,389,304,401,308,404,369,390,372,356,403,358,428,331,417,325,401,313,380,291,364,278,376,258,361,255,350,233,327,235,325,280,329,288,260" href="http://www.wwatertechinc.com" id="Texas" alt="Texas"/>
+                        <area shape="poly" coords="288,251,392,254,393,305,328,291,327,262,289,258,288,253" href="http://www.wwatertechinc.com" id="Ohklahoma" alt="Ohklahoma"/>
+                        <area shape="poly" coords="214,244,288,252,279,328,235,325,232,328,213,325,212,333,200,331,213,245" href="http://www.HennesyMech.com" id="NewMexico" alt="New Mexico"/>
+                        <area shape="poly" coords="153,233,212,244,199,332,172,327,128,300,133,296,131,290,136,282,142,274,138,261,141,246,148,247,152,234" href="http://www.HennesyMech.com" id="Arizona" alt="Arizona"/>
+
+                      <!-- Western Region -->
+                        <area shape="poly" coords="99,140,166,155,148,246,141,245,138,260,87,187,98,141" href="http://www.muniquipllc.com" id="Nevada" alt="Nevada"/>
+                        <area shape="poly" coords="80,216,81,222,106,217,87,184,99,139,50,127,52,135,42,151,47,165,43,174,48,186,49,192,54,197,51,201,53,208,56,226,73,224,79,216" href="http://www.muniquipllc.com" id="NorCal" alt="Northern California"/>
+                        <area shape="poly" coords="74,231,79,217,86,229,77,232" href="http://mechanical-associates.com" id="OG" alt="Central California"/>
+                        <area shape="poly" coords="138,263,108,220,86,224,87,232,76,234,75,227,58,229,62,249,78,263,88,270,97,280,100,294,129,298,133,295,131,287,134,284,136,279,142,275,137,265" href="http://www.muniquipllc.com" id="SoCal" alt="Southern California"/>
+                        <area shape="poly" coords="52,126,52,113,75,64,83,69,83,77,146,85,151,93,136,110,142,114,132,146,55,127" href="http://www.correctequipment.com" id="Oregon" alt="Oregon"/>
+                        <area shape="poly" coords="76,29,95,39,98,26,155,42,146,85,86,76,85,68,75,63,75,30" href="http://www.correctequipment.com" id="Washington" alt="Washington"/>
+                        <area shape="poly" coords="156,41,166,43,163,56,166,64,165,68,171,78,175,82,172,95,174,100,141,114,138,110,151,92,146,83,155,41" href="http://www.correctequipment.com" id="NorIdaho" alt="Northern Idaho"/>
+                        <area shape="poly" coords="176,99,178,98,182,108,186,119,205,119,201,160,166,155,132,148,140,116,178,102" href="http://www.rckymtnvalve.com" id="SouIdaho" alt="Southern Idaho"/>
+
+                      <!-- Islands -->
+                        <area shape="poly" coords="144,399,105,384,76,396,87,416,76,411,64,413,66,421,82,430,78,437,67,436,58,449,81,478,51,495,78,491,97,477,109,466,131,468,149,473,183,500,167,474,146,466,145,402" href="http://mechanical-associates.com" id="Alaska" alt="Alaska"/>
+	                      <area shape="poly" coords="214,446,214,461,239,463,279,488,300,517,316,507,319,494,292,474,268,458,240,451,229,446,215,445" href="http://mechanical-associates.com" id="Hawaii" alt="Hawaii"/>
+                    </map>
+            </div>
+          </div>
+        <div id="footer"  style="position: absolute; bottom: 0; left: 0">
+            <div id="placingTogether">
+            <div class="footer_links" style="width: 900px">
+                <ul class="footer_navigation" style="padding-left: 0px;">
+                    <li><a href="index.html" title="Home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="News.html" title="News">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;News&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="AboutUs.html" title="About Us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="Products.html" title="Products">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Products&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="Resources.html" title="Resources">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resources&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="ContactUs.html" title="Contact Us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                </ul>
+            </div>
+            <div id="social_media">
+              <a class="Logo" title="MA on Facebook" href="https://www.facebook.com/Mechanical-Associates-818192508251677/"><img src="PictureRefs/Facebook.png" width="40" height="40" alt="Facebook"/></a>
+              <a class="Logo" title="Tweet us!" href="https://twitter.com/MechAssociates"><img src="PictureRefs/Twitter.png" width="40" height="40" alt="Twitter"/></a>
+              <a class="Logo" title="MA on LinkedIn" href="https://www.linkedin.com/company/mechanical-associates"><img src="PictureRefs/LinkedIn.png" width="40" height="40" alt="LinkedIn"/></a>
+              <a class="Logo" title="MA on Google+" href="https://plus.google.com/+MechanicalAssociatesFresno/posts"><img src="PictureRefs/GooglePlus.png" width="40" height="40" alt="Google Plus"/></a>
+            </div>
+          </div>
+          <div id="stuff" style="display: inline-block; float: right">
+            <div id="crafting">
+              <div id="MERICA">
+                <img src="PictureRefs/smol.png" width="50" height="50" alt="Made in the USA"/><br/>
+              </div>
+            </div>
+            <div id="Logo_Only">
+                <div class="Logo" style="text-align: right; padding-right: 25px;">
+                    <img src="PictureRefs/LOGOONLY2.png" width="85" height="50" alt="Mechanical Associates Logo"/><br/>
+                </div>
+            </div>
+            <div id="STEALER">
+            <div class="copyright" style="text-align: right; width: 100%; margin: auto; display: inline-block">
+                    Copyright &copy; 2016 Mechanical Associates<br/>
+                    All Rights Reserved.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

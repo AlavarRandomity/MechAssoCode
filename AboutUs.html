@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta lang="en" name="language" content="english">
+    <title>About Us | Mechanical Associates</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- CSS stuff -->
+    <link type="text/css" rel="stylesheet" href="MainCSS.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <link rel="icon" href="PictureRefs/MAfavicon.png">
+    <style>
+      .content h2 {
+         font-family: Oswald;
+         font-weight: 400;
+      }
+
+      div.specialty {
+         width: 200px;
+      }
+
+/*         #footer {
+         position: absolute;
+         bottom: 0;
+         left: 0;
+      } */
+
+      @media screen and (max-width: 1591px) {
+         #footer {
+             position: static;
+         }
+      }
+
+      @media screen and (max-width: 1330px) {
+
+        .links {
+            font-size: 20px;
+        }
+      }
+
+      @media screen and (max-width: 1064px) {
+        .links {
+            font-size: 18px;
+        }
+      }
+
+      @media screen and (max-width: 991px) {
+        #header {
+            height: 136px;
+            border-bottom: 0;
+        }
+
+        .content {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .links ul {
+            padding-left: 0;
+            padding-top: 0;
+        }
+
+        .links {
+            display: inline-block;
+            width: 100%;
+            text-align: left;
+            border-top: 1px solid white;
+        }
+
+        .links a {
+            padding-top: 20px;
+            padding-bottom: 8px;
+        }
+      }
+    </style>
+      <!-- JavaScript Code -->
+
+  </head>
+  <body>
+      <!-- JavaScript Body code -->
+       <!-- Google+ -->
+      <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+      <!-- MORE SCRIPT -->
+         <script type="text/javascript">
+           $(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+      // mobile call
+      //    <!--
+          if (screen.width <= 699) {
+          document.location = "mobileAbout.html";
+          } else if (screen.width >= 700 && screen.width <= 1074) {
+            document.location = "tabletAbout.html";
+          }
+          //-->
+    </script>
+<!-- Start up the actual body stuff cause OH MY GOD ALL THIS CODE -->
+<div id="container">
+    <div id="header">
+        <div id="header_navigation">
+            <span class="company_logo">
+                <a href="index.html" title="Mechanical Associates"><img src="PictureRefs/MechanicalAssociates_Logo.png" height="70" alt="Mechanical Associates Logo"/></a>
+            </span>
+            <div class="links">
+                <ul class="actualnavigation">
+                    <li><a href="index.html" title="Home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="News.html" title="News">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;News&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="AboutUs.html" title="About Us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="Products.html" title="Products">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Products&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="Resources.html" title="Resources">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resources&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="ContactUs.html" title="Contact Us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="banner">
+            <img src="PictureRefs/aboutBanner.png" alt="About Mechanical Associates"/>
+        </div>
+    <div id="main_content">
+      <div id="left_content">
+        <div class="content" style="margin-bottom: 200px">
+          <div id="productLine" style="margin-top: 30px; margin-bottom: 20px;">
+          <div class="specialty" style="padding-top: 40px; border-right: 1px solid black"><a href="#CompanyInfo" id="Overview">The Company</a></div><!--<div class="specialty" style="padding-top: 40px; border-right: 1px solid black"><a href="#CompanyWorkers" id="Calculations">Office People</a></div>--><div class="specialty" style="padding-bottom: 20px;"><a href="#CompanyHistory" id="Drawings">Company History</a></div>
+          </div>
+          <!-- <iframe width="97%" height="850px" src="CanalGateInfo/CanalGateShow.htm" style="border: none" name="productSpotlight"></iframe> -->
+          <div id="CompanyInfo">
+          <h2>A leading authority in water control management</h2>
+                With over 50 years of combined experience, Mechanical Associates manufactures corrosion resistant water control gates and specialty valves. We are experts at providing the finest quality products and solutions for water control &#38; management throughout all industries.
+                <p>
+                We are committed to providing the best value to our customers over all other competitors through engineering innovation, quality, delivery, and manufacturing techniques. We continually look for, and find, better ways to serve our customers and meet their specific needs.
+                <p>
+                We are strategically located in Fresno, California. Fresno is the heart of the most agriculturally productive regions in the world, making water control vital to the economy. We are also represented throughout the United States &#40;please refer to our contact page for the nearest representative&#41; and have thousands of gates install across the USA, Canada, Singapore, &#38; Australia
+                <p>
+                <b><u>Above all else, customer statisfaction is our number one priority!</u></b>
+            </p>
+          </div>
+             <!-- <p style="border-bottom: 1px solid black">
+               <div id="CompanyWorkers">
+               <h2>Office Team</h2>
+               </div> -->
+               <div id="CompanyHistory">
+          <h2>History of Mechanical Associates</h2>
+                Mechanical Assocates was formed with a vision to conserve and control one of our most precious resources, water, by ensuring safe and efficient distribution to support sustainable agricultural and industrial progress.
+                <p>
+                Established in 1993, Mechanical Associates' induction into the gate manufacturing industry began with one man's vision to improve upon the quality of gate fabrication and to provide his clients with a cost-effective final product that would endure the test of time. That conception developed into a formidable company with an impressive market share of the industry. Now twenty-three years later, Mechanical Associates thrives under the parent company of PGM and has developed proprietary components to their gates which ensures the best product possible for their clients.
+                <p>
+                One of the many examples of our innovation is Mechanical Associates' reversed domed flap gate utilizing spinning equipment. The reversed domed cover provides greater strength than that of a flat plate, thus eliminating welding reinforcement on the flap gate cover. This innovative design allows for lightweight stainless steel flap gates to replace heavier cast iron gates without sacrificing performace, durability, or cost.
+                <p>
+                Moreover, subsequent products have expanded Mechanical Associates' product line to serve all water control industries including: Municipal, Industrial, Agricultural, Flood Control, Dairy, and Wildlife &#38; Land Conservation.
+               </div>
+        </div>
+      </div>
+      <div id="footer">
+            <div id="placingTogether">
+            <div class="footer_links" style="width: 900px">
+                <ul class="footer_navigation" style="padding-left: 0px;">
+                    <li><a href="index.html" title="Home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="News.html" title="News">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;News&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="AboutUs.html" title="About Us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="Products.html" title="Products">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Products&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="Resources.html" title="Resources">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resources&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="ContactUs.html" title="Contact Us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                </ul>
+            </div>
+            <div id="social_media">
+              <a class="Logo" title="MA on Facebook" href="https://www.facebook.com/Mechanical-Associates-818192508251677/"><img src="PictureRefs/Facebook.png" width="40" height="40" alt="Facebook"/></a>
+              <a class="Logo" title="Tweet us!" href="https://twitter.com/MechAssociates"><img src="PictureRefs/Twitter.png" width="40" height="40" alt="Twitter"/></a>
+              <a class="Logo" title="MA on LinkedIn" href="https://www.linkedin.com/company/mechanical-associates"><img src="PictureRefs/LinkedIn.png" width="40" height="40" alt="LinkedIn"/></a>
+              <a class="Logo" title="MA on Google+" href="https://plus.google.com/+MechanicalAssociatesFresno/posts"><img src="PictureRefs/GooglePlus.png" width="40" height="40" alt="Google Plus"/></a>
+            </div>
+          </div>
+          <div id="stuff" style="display: inline-block; float: right">
+            <div id="crafting">
+              <div id="MERICA">
+                <img src="PictureRefs/smol.png" width="50" height="50" alt="Made in the USA"/><br/>
+              </div>
+            </div>
+            <div id="Logo_Only">
+                <div class="Logo" style="text-align: right; padding-right: 25px;">
+                    <img src="PictureRefs/LOGOONLY2.png" width="85" height="50" alt="Mechanical Associates Logo"/><br/>
+                </div>
+            </div>
+            <div id="STEALER">
+            <div class="copyright" style="text-align: right; width: 100%; margin: auto; display: inline-block">
+                    Copyright &copy; 2016 Mechanical Associates<br/>
+                    All Rights Reserved.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

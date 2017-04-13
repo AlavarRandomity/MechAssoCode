@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta lang="en" name="language" content="english">
+    <title>Products | Mechanical Associates</title>
+
+    <!-- CSS stuff -->
+    <link type="text/css" rel="stylesheet" href="testMainCSS.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <link rel="icon" href="PictureRefs/MAfavicon.png">
+
+    <style>
+        #toQuote {
+          background: #115393;
+          color: #FFFFFF;
+          text-decoration: none;
+          font-size: 16px;
+          padding: 7px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          border-radius: 5px;
+        }
+
+        .diffGateTypes {
+            border-right: 2px solid #115393;
+            padding-left: 0;
+        }
+
+/*         .specialty {
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+        } */
+
+        .gateInfo ul {
+            padding-left: 10px;
+            margin-top: 0;
+        }
+
+        .gateInfo p {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        #specMuni:focus {
+            border-bottom: 0;
+        }
+
+        @media screen and (max-width: 1699px) {
+            .deezGaets a {
+            padding-left: 0;
+          }
+        }
+
+        @media screen and (max-width: 1651px) {
+
+        }
+
+        @media screen and (max-width: 1423px) {
+        .specialty {
+            border-left: 0;
+            border-right: 0;
+        }
+
+/*         #specTide {
+            border-left: 1px solid black;
+        }
+ */
+        .diffGateTypes {
+            padding-right: 60px;
+            padding-left: 0;
+        }
+      }
+
+        @media screen and (max-width: 1647px) {
+        div.deezGaets {
+            width: 300px;
+            padding-right: 0;
+        }
+
+        .deezGaets a:hover {
+            background-color: #0E7DC2;
+            width: 100%;
+            height: 100%;
+
+            top: 0;
+            left: 0;
+
+            color:#FFFFFF;
+        }
+      }
+
+        @media screen and (max-width: 1339px) {
+        .diffGateTypes {
+            border-right: 0;
+        }
+      }
+
+        @media screen and (max-width: 1330px) {
+
+        .links {
+            font-size: 20px;
+        }
+      }
+
+        @media screen and (max-width: 1212px) {
+
+        div.deezGaets a {
+            font-size: 16px;
+            text-decoration: underline;
+
+        }
+
+        .deezGaets a:hover {
+            width: 75%;
+            text-decoration: none;
+        }
+
+      }
+
+      @media screen and (max-width: 1064px) {
+        .links {
+            font-size: 18px;
+        }
+      }
+
+      @media screen and (max-width: 991px) {
+        #header {
+            height: 148px;
+            border-bottom: 0;
+        }
+
+        .content {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .links ul {
+            padding-left: 0;
+            padding-top: 0;
+        }
+
+        .links {
+            display: inline-block;
+            width: 100%;
+            text-align: left;
+            border-top: 1px solid white;
+        }
+
+        .company_logo {
+            margin-bottom: 10px;
+        }
+
+        .links a {
+            padding-top: 20px;
+            padding-bottom: 8px;
+        }
+
+        div.deezGaets{
+            width: 280px;
+            font-size: 16px;
+        }
+
+
+        .deezGaets a {
+            font-size: 16px;
+        }
+
+        .deezGaets a:hover {
+            width: 80%;
+        }
+      }
+
+/*       @media screen and (max-width: 944px) {
+        #specMuni {
+            border-left: 1px solid black;
+        }
+      } */
+
+      @media screen and (max-width: 895px) {
+        .gateInfo {
+            float: none;
+        }
+
+        .deezGaets div{
+            width: 300px;
+            font-size: 16px;
+        }
+
+        .deezGaets a {
+            font-size: 16px;
+        }
+
+        .deezGaets a:hover {
+            width: 100%;
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        #footer {
+            position: static;
+        }
+      }
+
+    </style>
+       <!-- JavaScript Body code -->
+      <script src="https://apis.google.com/js/platform.js" async defer></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+      <!-- MORE SCRIPT -->
+    <script type="text/javascript">
+          // mobile call
+            //  <!--
+              if (screen.width <= 699) {
+          document.location = "mobileProducts.html";
+          } else if (screen.width >= 700 && screen.width <= 1074) {
+            document.location = "tabletProducts.html";
+          }
+              //-->
+
+          $(document).ready(function() {
+              $('#specMuni').click(function() {
+                  $('#panel1').slideToggle("slow");
+              });
+          });
+
+          $(document).ready(function() {
+              $('#specTide').click(function() {
+                  $('#panel3').slideToggle("slow");
+              });
+          });
+
+      // All for the products
+/*       $(document).ready(function(){
+    $(".flip").on("click", function(e) {
+
+        var target = $(this).attr("href");
+        $(target).slideToggle(800);
+        $(".specialProduct").not(target).hide();
+        e.preventDefault();
+    });
+}); */
+            /*$(document).ready(function(){
+              $("#Municipal").hover(function(){
+                  $("#muniShow").slideDown(500);
+                  $("#agriShow").slideUp(500);
+                  $("#tideShow").slideUp(500);
+              });
+
+              $("#muniShow").mouseleave(function(){
+               $("#muniShow").slideUp(500);
+              });
+          });
+
+          $(document).ready(function(){
+              $("#AgriCon").hover(function(){
+                  $("#muniShow").slideUp(500);
+                  $("#agriShow").slideDown(500);
+                  $("#tideShow").slideUp(500);
+              });
+
+              $("#agriShow").mouseleave(function(){
+               $("#agriShow").slideUp(500);
+              });
+          });
+
+          $(document).ready(function(){
+              $("#TideCon").hover(function(){
+                  $("#muniShow").slideUp(500);
+                  $("#agriShow").slideUp(500);
+                  $("#tideShow").slideDown(500);
+              });
+
+              $("#tideShow").mouseleave(function(){
+               $("#tideShow").slideUp(500);
+              });
+          });*/
+        </script>
+  </head>
+  <body>
+<!-- Start up the actual body stuff cause OH MY GOD ALL THIS CODE -->
+    <div id="container" style="height: 100%; top: 0; left: 0; position: relative">
+      <div id="header">
+        <div id="header_navigation">
+            <span class="company_logo">
+                <a href="index.html" title="Mechanical Associates"><img src="PictureRefs/MechanicalAssociates_Logo.png" height="70" alt="Mechanical Associates Logo"/></a>
+            </span>
+            <div class="links">
+                <ul class="actualnavigation">
+                    <li><a href="index.html" title="Home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="News.html" title="News">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;News&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="AboutUs.html" title="About Us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="Products.html" title="Products">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Products&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="Resources.html" title="Resources">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resources&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="ContactUs.html" title="Contact Us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="banner">
+            <img src="PictureRefs/productsBanner.png" alt="Welcome to the products page!" style="z-index: 19"/>
+    </div>
+    <div id="main_content">
+      <div id="left_content">
+        <div class="content">
+          <div title="Introduction" id="introProducts" style="margin-top: 10px;">
+              <!-- <h1><center>Welcome to the products page. <br/>Please select your desired industry.</center></h1><p> -->
+          </div>
+          <p style="font-size: 24px; text-align: center">Need a quote? Go here: <a href="Quotation.html" id="toQuote">Gate Quote</a></p>
+          <p style="font-size: 18px; text-align: center; margin-bottom: 0; margin-top: 7px">See our full brochure here: <a href="pdfs/2016BROCHURES-Municipal.pdf"><img src="PictureRefs/AdobePDFicon.png" alt="Product Brochure"/></a></p>
+          <p style="text-align: center; margin-bottom: 0; margin-top: 0">If you have any questions, feel free to reach us: sales@mechanical-associates.com</p>
+          <p style="text-align: center; margin-top: 0">Choose what type of product you want from below</p>
+            <!--<hr style="margin-top: 10px;"> -->
+            <div class="productLine">
+              <div id="specMuni" class="specialty" title="Municipal" style="border-right: 0" onclick="mark(this)"><a href="#panel1" class="flip" id="Municipal" style="padding-left: 10px; width: 99.1%">Water Control Equipment</a></div><!-- <div class="specialty" title="Agriculture & Drainage" style="padding-top: 40px;"><a href="#panel2" class="flip" id="AgriCon">Agriculture &amp; Drainage</a></div> -->
+            </div>
+            <div id="productInfo">
+              <div class="specialProduct" id="panel1">
+                 <div class="gateInfo">
+                   <img src="PictureRefs/LeMuni.png" style="float: right; display: inline-block; width: 50%;" alt="Open gates at a wastewater treatment plant."/>
+                   <p style="margin-bottom: 0">Our gates can be used for the following applications:</p>
+                   <ul style="padding-top: 10px; font-size: 15px">
+                     <li>Water</li>
+                     <li>Waste Water</li>
+                     <li>Public Utilities</li>
+                     <li>Industrial</li>
+                     <li>Food Processing</li>
+                     <li>Farming</li>
+                     <li>Irrigation</li>
+                     <li>Dairy</li>
+                     <li>Flood Control</li>
+                     <li>Estuary/Wildlife Restoration &amp; Preservation</li>
+                     <li>Fish Hatcheries</li>
+                     <li>Fish Ladders</li>
+                     <li>Tidal Conditions</li>
+                     <li>Duck Clubs (Waterfowl Preservation)</li>
+                   </ul>
+                 </div>
+                 <div class="diffGateTypes"> <!-- Municipal -->
+                  <div class="deezGaets"><a href="Products/Municipal/Slide-Gates.html">Slide Gates</a><br/></div>
+                  <div class="deezGaets"><a href="Products/Municipal/Weir-Gates.html">Weir Gates</a><br/></div>
+                  <div class="deezGaets"><a href="Products/Municipal/StopGates-StopLogs-Bulkheads.html">Stop Gates/Stop Logs/Bulkheads</a><br/></div>
+                  <div class="deezGaets"><a href="Products/Municipal/Flap-Gates.html">Flap Gates</a><br/></div>
+                  <div class="deezGaets"><a href="Products/Municipal/Radial-RollerGates.html">Radial &amp; Roller Gates</a><br/></div>
+                  <div class="deezGaets"><a href="Products/Municipal/SpecialtyValves-Gates.html">Specialty Valves &amp; Gates</a><br/></div>
+                  <div class="deezGaets"><a href="Products/Municipal/CanalGates.html">US Canal Gates</a><br/></div>
+                 </div>
+              </div>
+<!--           <div class="specialProduct" id="panel2">
+                 <div class="gateInfo">
+                   <img src="PictureRefs/AgriCon.png" style="float: right; display: inline-block; width: 35%;" alt="A gate and an agricultural canal"/>
+                   Agriculture &amp; Drainage<p><br/>
+                   Involves the following:
+                   <ul>
+                     <li>Farming</li>
+                     <li>Irrigation</li>
+                     <li>Dairy</li>
+                     <li>Flood Control</li>
+                   </ul>
+                 </div>
+                  <div class="diffGateTypes"> (AgriCon)
+<!--              <div class="deezGaets"><a href="Products/AgriCon/Canal-Gates.html">&nbsp;&nbsp;&nbsp;Canal Gates&nbsp;&nbsp;&nbsp;</a><br/></div>
+                  <div class="deezGaets"><a href="Products/AgriCon/Slide-Gates.html">&nbsp;&nbsp;&nbsp;Slide Gates&nbsp;&nbsp;&nbsp;</a><br/></div>
+                  <div class="deezGaets"><a href="Products/AgriCon/Combo-Gates.html">&nbsp;&nbsp;&nbsp;Combo Gates&nbsp;&nbsp;&nbsp;</a><br/></div>
+                  <div class="deezGaets"><a href="Products/AgriCon/Flap-Gates.html">&nbsp;&nbsp;&nbsp;Flap Gates&nbsp;&nbsp;&nbsp;</a><br/></div>
+                  <div class="deezGaets"><a href="Products/AgriCon/In-LineGates.html">&nbsp;&nbsp;&nbsp;In-Line Gates&nbsp;&nbsp;&nbsp;</a><br/></div>
+                  <div class="deezGaets"><a href="Products/AgriCon/StopGates-StopLogs.html">&nbsp;&nbsp;&nbsp;Stop Gates/Stop Logs&nbsp;&nbsp;&nbsp;</a><br/></div>
+                  <div class="deezGaets"><a href="Products/AgriCon/FlashboardRiserGates.html">&nbsp;&nbsp;&nbsp;Flashboard Riser Gates&nbsp;&nbsp;&nbsp;</a><br/></div>
+                 </div>
+              </div> -->
+              </div>
+              <div class="productLine">
+                <div id="specTide" class="specialty" title="Tidal, Conservation, and Restoration"><a href="#panel3" class="flip" id="TideCon" style="padding-left: 10px; width: 99.1%">Accessories</a></div>
+              </div>
+              <div>
+                <div class="specialProduct" id="panel3" style="display: none">
+                  <p style="font-family: Oswald; font-size: 24px; text-align: center">Ask about our accessories at sales@mechanical-associates.com</p>
+                    <center><iframe id="Access" width="1000" height="900" style="border: none" src="Products/Accessories.pdf"></iframe></center></div>
+<!--                 <div class="gateInfo">
+                   <img src="PictureRefs/Landas.png" style="float: right; display: inline-block; width: 50%;"alt="A gate looking onto a wildlife preservation area."/>
+                   Tidal, Conservation, and Restoration<p><br/>
+                   Involves the following:
+                  <ul>
+                    <li>Flood Control</li>
+                    <li>Estuary Restoration &amp; Preservation</li>
+                    <li>Wildlife Restoration &amp; Preservation</li>
+                    <li>Fish Hatcheries</li>
+                    <li>Fish Ladders</li>
+                    <li>Tidal Conditions</li>
+                    <li>Duck Clubs (Waterfowl Preservation)</li>
+                  </ul>
+                 </div>
+                  <div class="diffGateTypes"> (TideCon)
+             <!-- <div class="deezGaets"><a href="Products/TideCon/Canal-Gates.html">&nbsp;&nbsp;&nbsp;Canal Gates&nbsp;&nbsp;&nbsp;</a><br/></div>
+                  <div class="deezGaets"><a href="Products/TideCon/Slide-Gates.html">&nbsp;&nbsp;&nbsp;Slide Gates&nbsp;&nbsp;&nbsp;</a><br/></div>
+                  <div class="deezGaets"><a href="Products/TideCon/Combo-Gates.html">&nbsp;&nbsp;&nbsp;Combo Gates&nbsp;&nbsp;&nbsp;</a><br/></div>
+                  <div class="deezGaets"><a href="Products/TideCon/Flap-Gates.html">&nbsp;&nbsp;&nbsp;Flap Gates&nbsp;&nbsp;&nbsp;</a><br/></div>
+                  <div class="deezGaets"><a href="Products/TideCon/In-LineGates.html">&nbsp;&nbsp;&nbsp;In-Line Gates&nbsp;&nbsp;&nbsp;</a><br/></div>
+                  <div class="deezGaets"><a href="Products/TideCon/StopGates-StopLogs.html">&nbsp;&nbsp;&nbsp;Stop Gates/Stop Logs&nbsp;&nbsp;&nbsp;</a><br/></div>
+                  <div class="deezGaets"><a href="Products/TideCon/FlashboardRiserGates.html">&nbsp;&nbsp;&nbsp;Flashboard Riser Gates&nbsp;&nbsp;&nbsp;</a><br/></div>
+                  </div> -->
+              </div>
+        </div>
+      </div>
+      <div id="footer" style="position: absolute; left: 0; bottom: 0">
+          <div id="placingTogether">
+            <div class="footer_links" style="width: 900px">
+                <ul class="footer_navigation" style="padding-left: 0px;">
+                    <li><a href="index.html" title="Home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="News.html" title="News">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;News&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="AboutUs.html" title="About Us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="Products.html" title="Products">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Products&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="Resources.html" title="Resources">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resources&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="ContactUs.html" title="Contact Us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                </ul>
+            </div>
+            <div id="social_media">
+              <a class="Logo" title="MA on Facebook" href="https://www.facebook.com/Mechanical-Associates-818192508251677/"><img src="PictureRefs/Facebook.png" width="40" height="40" alt="Facebook"/></a>
+              <a class="Logo" title="Tweet us!" href="https://twitter.com/MechAssociates"><img src="PictureRefs/Twitter.png" width="40" height="40" alt="Twitter"/></a>
+              <a class="Logo" title="MA on LinkedIn" href="https://www.linkedin.com/company/mechanical-associates"><img src="PictureRefs/LinkedIn.png" width="40" height="40" alt="LinkedIn"/></a>
+              <a class="Logo" title="MA on Google+" href="https://plus.google.com/+MechanicalAssociatesFresno/posts"><img src="PictureRefs/GooglePlus.png" width="40" height="40" alt="Google Plus"/></a>
+            </div>
+          </div>
+          <div id="stuff" style="display: inline-block; float: right">
+            <div id="crafting">
+              <div id="MERICA">
+                <img src="PictureRefs/smol.png" width="50" height="50" alt="Made in the USA"/><br/>
+              </div>
+            </div>
+            <div id="Logo_Only">
+                <div class="Logo" style="text-align: right; padding-right: 25px;">
+                    <img src="PictureRefs/LOGOONLY2.png" width="85" height="50" alt="Mechanical Associates Logo"/><br/>
+                </div>
+            </div>
+            <div id="STEALER">
+            <div class="copyright" style="text-align: right; width: 100%; margin: auto; display: inline-block">
+                    Copyright &copy; 2016 Mechanical Associates<br/>
+                    All Rights Reserved.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

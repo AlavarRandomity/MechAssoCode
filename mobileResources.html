@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+  <head>
+    <title>Resources | Mechanical Associates</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- CSS stuff -->
+    <link type="text/css" rel="stylesheet" href="mainMobileCSS.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <link rel="icon" href="PictureRefs/MAfavicon.png">
+    <style>
+      #mainInfo a {
+         font-size: 20px;
+      }
+
+      .content a {
+          font-family: Oswald;
+          font-weight: 100;
+          width: 100%;
+          font-weight: bold;
+          font-size: 24px;
+          margin-bottom: 7px;
+      }
+
+      .content a {
+          color:  #0E7DC2;
+      }
+
+      .choice {
+          border-bottom: 1px solid black;
+      }
+    </style>
+
+    <!-- Mobile-to-Website Code Stuff -->
+        <script type="text/javascript">
+         // <!--
+              if (screen.width >= 700 && screen.width <= 1074) {
+              document.location = "tabletResources.html";
+              } else if (screen.width >= 1075) {
+              document.location = "Resources.html";
+              }
+              //-->
+        </script>
+  </head>
+  <body>
+    <div data-role="page">
+
+      <div data-role="header" id="header">
+          <img class="company_logo" src="PictureRefs/MechanicalAssociates_Logo.png"/>
+      </div>
+
+      <div data-role="main" class="ui-content" id="ui-content">
+      <div id="mobile_navigation">
+        <span class="links">
+          <div class="mobileLink" style="border-top: 2px solid #051729; border-bottom: 1px solid #051729;"><a href="index.html" title="Home" alt="Home">Home</a></div>
+          <div class="mobileLink" style="border-bottom: 1px solid #051729;"><a href="News.html" title="News and Announcements">News and Announcements</a></div>
+          <div class="mobileLink" style="border-bottom: 1px solid #051729;"><a href="AboutUs.html" title="About Us" alt="About Us">About Us</a></div>
+          <div class="mobileLink" style="border-bottom: 1px solid #051729;"><a href="Products.html" title="Products" alt="Products">Products</a></div>
+          <div class="mobileLink" style="border-bottom: 1px solid #051729;"><a href="Resources.html" title="Resources" alt="Resources">Resources</a></div>
+          <div class="mobileLink" style="border-bottom: 2px solid #051729;"><a href="ContactUs.html" title="Contact Us" alt="Contact Us">Contact Us</a></div>
+        </span>
+      </div>
+        <div id="banner">
+           <img src="PictureRefs/Overhead.png" alt="Resources"/>
+        </div>
+      <div id="mainInfo">
+        <div class="content">
+        <h1 style="font-family: Oswald; font-weight: 100; margin-bottom: 7px; margin-top: 0">Resources</h1>
+          <div class="choice"><a href="Resources/CaseStudy.html" style="text-decoration: none;">Case Studies</a></div>
+                <i>Learn more about our past projects.</i><p>
+            <div class="choice"><a href="Resources/ToolBox.html" style="text-decoration: none;">The Engineering Tool Box</a></div>
+                <i>Use our online tools to find out the flow rate and head pressure for your projects.</i><p>
+            <div class="choice"><a href="Resources/MaterialSpecifications.pdf" target="_blank" style="text-decoration: none;">Material Specifications</a></div>
+                <i>Product material specifications.</i><p>
+            <div class="choice"><a href="Resources/Videos.html" style="text-decoration: none;">Videos</a></div>
+                <i>Our videos include training videos and videos on how-to-install our gates.</i><p>
+            <div class="choice"><a href="Resources/LoR.html" style="text-decoration: none;">Letters of Recommendation</a></div>
+                <i>Letters of Recommendation</i><p>
+        </div>
+    </div>
+        <div data-role="footer" id="footer" data-position="fixed">
+        <div id="footerLinks">
+         <h3>
+           Follow Mechanical Associates<p>
+             <div class="Logo" style="margin-left: 0"><a href="https://www.facebook.com/Mechanical-Associates-818192508251677/"><img src="PictureRefs/Facebook.png" width="50" height="50"></img></a></div>
+             <div class="Logo"><a href="https://twitter.com/MechAssociates"><img src="PictureRefs/Twitter.png" width="50" height="50"></img></a></div>
+             <div class="Logo"><a href="https://www.linkedin.com/company/mechanical-associates"><img src="PictureRefs/LinkedIn.png" width="50" height="50"></img></a></div>
+             <div class="Logo" style="margin-right: 0"><a href="https://plus.google.com/+MechanicalAssociatesFresno/posts"><img src="PictureRefs/GooglePlus.png"></img></a></div>
+            </p>
+           </h3>
+          </div>
+        <div id="MERICA" style="margin-top: 5px">
+          <div id="logoMERICA"><img src="PictureRefs/smol.png" width="75" height="75"></img></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

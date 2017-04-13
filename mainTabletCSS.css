@@ -1,0 +1,235 @@
+/* MainCSS */
+/* Code by Brenna Picar (I tried shoving as much understandable comments as I could.) */
+/* Main Structure for page */
+body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-size: 100%;
+
+      background-image: url("PictureRefs/WaveBackground5.png");
+      background-color: #115393;
+      background-position: bottom center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+
+      font-family: Arial, Helvetica, sans-serif;
+  }
+/* ------------------------------- Start the Header here ------------------------------- */
+/* Header */
+#header {
+      background: #000000;
+      width: 100%;
+      height: 170px;
+      margin: auto;
+
+      font-family: Oswald;
+      font-size: 20px;
+}
+
+#header a {
+    text-decoration: none;
+    color:#FFFFFF;
+  }
+
+
+.company_logo {
+      float: left;
+      position: relative;
+
+      padding-top: 5px;
+      padding-left: 5px;
+      margin: auto;
+      z-index: 20;
+}
+
+.links {
+      position: absolute;
+      margin: auto;
+      height: 80px;
+      width: 100%;
+      z-index: 20;
+      border-top: 1px solid white;
+      padding-top: 8px;
+
+      text-align: center;
+}
+
+.actualnavigation {
+      display: inline-block;
+      padding: 0;
+
+      list-style-type: none;
+}
+
+/* ------------------------------- Start the Main Content here ------------------------------- */
+#mobile_navigation {
+      background: #0E7DC2;
+      width: 100%;
+      margin: auto;
+      z-index: 20;
+
+      text-align: center;
+}
+
+.mobileLink {
+      padding-top: 10px;
+      padding-bottom: 10px;
+}
+
+.links a {
+      position: relative;
+      width: 320px;
+      top: 0;
+      left: 0;
+      padding-top: 28px;
+      padding-bottom: 25px;
+      z-index: 21;
+
+      text-decoration: none;
+      color: #FFFFFF;
+}
+
+#banner {
+      width: 100%;
+      margin: auto;
+}
+
+#banner img {
+      width: 100%;
+}
+
+#mainInfo {
+      background-color: rgba(255, 255, 255, 0.5);
+      width: 70%;
+      margin: auto;
+
+      padding-top: 25px;
+      padding-left: 35px;
+      padding-right: 35px;
+      padding-bottom: 25px;
+}
+
+#content {
+      background-color: rgba(255, 255, 255, 0.5);
+      margin: auto;
+      width: 75%;
+
+      border-radius: 10px;
+      padding-top: 10px;
+      padding-left: 45px;
+      padding-right: 45px;
+      padding-bottom: 10px;
+}
+
+.Product {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+}
+
+#mainInfo h2 {
+      font-family: Oswald;
+      font-weight: 100;
+}
+
+#mainInfo li {
+      margin: 0;
+      padding: 0;
+}
+
+#productLine {
+      display: inline-block;
+      width: 100%;
+}
+
+div.specialty {
+      position: relative;
+      background-color: #115393;
+      display: inline-block;
+      width: 100%;
+
+      padding-top: 40px;
+      padding-bottom: 20px;
+
+      vertical-align: middle;
+      line-height: 60px;
+}
+
+div.specialty a {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     z-index: 10;
+
+     top: 0;
+     left: 0;
+     padding-left: 25px;
+
+     color: #FFFFFF;
+     text-decoration: none;
+}
+
+div.diffGateTypes {
+     padding-top: 10px;
+}
+
+div.diffGateTypes a {
+     color:  #115393;
+}
+
+.flip {
+     display: block;
+     width: 85%;
+     height: auto;
+
+     padding: 25px;
+     padding-top: 0;
+
+     color: #000000;
+     text-decoration: none;
+     font-weight: 300;
+     font-size: 24px;
+}
+
+.flip a {
+     display: block;
+     width: 100%;
+     height: 25px;
+
+     padding-top: 15px;
+     padding-bottom: 15px;
+     border-radius: 5px;
+     padding-left: 15px;
+
+     font-weight: bold;
+     text-decoration: none;
+     color: #115393;
+}
+
+.flip p {
+     margin: 0;
+}
+/* ------------------------------- Start the Footer here ------------------------------- */
+#footer {
+      background: #000000;
+      float: right;
+      width: 100%;
+      color: #FFFFFF;
+      margin-top: 10px;
+}
+
+.Logo {
+      width: 50px;
+      margin-left: 7px;
+      margin-right: 7px;
+      float: left;
+}
+
+#MERICUR {
+      display: block;
+      width: 75px;
+      margin: auto;
+}

@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="english">
+    <link rel="canonical" href="http://www.mechanical-associates.com" />
+    <link href=”http://www.mechanical-associates.com” rel=”publisher” />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script src="javaScript/testimonies.js"></script>
+    <title>Home | Mechanical Associates</title>
+
+    <!-- CSS stuff -->
+    <link type="text/css" rel="stylesheet" href="testMainCSS.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <link rel="icon" href="PictureRefs/MAfavicon.png">
+
+     <!-- JavaScript Code -->
+       <!-- Google+ -->
+      <script src="https://apis.google.com/js/platform.js" async defer></script>
+      <script type="text/javascript" src="javaScript/jquery-1.11.3.min.js"></script>
+      <script type="text/javascript" src="javaScript/jssor.slider.mini.js"></script>
+    <!-- use jssor.slider.debug.js instead for debug -->
+
+      <!-- MORE SCRIPT -->
+        <script type="text/javascript">
+         $(document).ready(function()
+         {
+             setupRotator();
+         });
+         function setupRotator()
+         {
+             if($('.textItem').length > 1)
+             {
+                 $('.textItem:first').addClass('current').fadeIn(1000);
+                 setInterval('textRotate()', 10000);
+             }
+         }
+             function textRotate()
+             {
+                 var current = $('#quotes > .current');
+                 if(current.next().length == 0)
+                 {
+                     current.removeClass('current').fadeOut(1000);
+                     $('.textItem:first').addClass('current').fadeIn(1000);
+                 }
+                 else
+                 {
+                     current.removeClass('current').fadeOut(1000);
+                     current.next().addClass('current').fadeIn(1000);
+                 }
+             }
+// Baked sweet and spicy chicken
+          // mobile call
+    //      <!--
+          if (screen.width <= 699) {
+          document.location = "mobileIndex.html";
+          } else if (screen.width >= 700 && screen.width <= 1074) {
+            document.location = "tabletIndex.html";
+          }
+          //-->
+        </script>
+
+    <!-- for image slider-->
+    <script>
+         jQuery(document).ready(function ($) {
+
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $Cols: 4,
+                $SpacingX: 4,
+                $SpacingY: 4,
+                $Orientation: 2,
+                $Align: 0
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 600);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+  <!-- CSS STUFF CAUSE DAMN SON -->
+      <style>
+        /* Twitter Widget */
+        iframe[id^='twitter-widget-']{
+          width:340px !important;
+        }
+
+        /* jssor slider arrow navigator skin 02 css */
+        /*
+        .jssora02l                  (normal)
+        .jssora02r                  (normal)
+        .jssora02l:hover            (normal mouseover)
+        .jssora02r:hover            (normal mouseover)
+        .jssora02l.jssora02ldn      (mousedown)
+        .jssora02r.jssora02rdn      (mousedown)
+        */
+        .jssora02l, .jssora02r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 55px;
+            height: 55px;
+            cursor: pointer;
+            background: url('PictureRefs/a02.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora02l { background-position: -3px -33px; }
+        .jssora02r { background-position: -63px -33px; }
+        .jssora02l:hover { background-position: -123px -33px; }
+        .jssora02r:hover { background-position: -183px -33px; }
+        .jssora02l.jssora02ldn { background-position: -3px -33px; }
+        .jssora02r.jssora02rdn { background-position: -63px -33px; }
+/* jssor slider thumbnail navigator skin 11 css */
+        /*.jssort11 .p
+        (normal).jssort11 .p:hover
+        (normal mouseover).jssort11 .pav
+        (active).jssort11 .pav:hover
+        (active mouseover).jssort11 .pdn
+        (mousedown)*/
+        .jssort11 .p {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 69px;
+            background: #181818;
+          }
+
+        .jssort11 .tp {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .jssort11 .i, .jssort11 .pav:hover .i {
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 60px;
+            height: 30px;
+            border: white 1px dashed;
+        }
+
+        * html .jssort11 .i {
+            width /**/: 62px;
+            height /**/: 32px;
+        }
+
+        .jssort11 .pav .i {
+            border: white 1px solid;
+        }
+
+        .jssort11 .t, .jssort11 .pav:hover .t {
+            position: absolute;
+            top: 3px;
+            left: 68px;
+            width: 129px;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            color: #095090;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .jssort11 .pav .t, .jssort11 .p:hover .t {
+            color: #fff;
+        }
+
+        .jssort11 .c, .jssort11 .pav:hover .c {
+            position: absolute;
+            top: 38px;
+            left: 3px;
+            width: 194px;
+            height: 32px;
+            line-height: 32px;
+            color: #fff;
+            font-size: 11px;
+            font-weight: 400;
+            overflow: hidden;
+        }
+
+        .jssort11 .pav .c, .jssort11 .p:hover .c {
+            color: #095090;
+        }
+
+        .jssort11 .t, .jssort11 .c {
+            transition: color 2s;
+            -moz-transition: color 2s;
+            -webkit-transition: color 2s;
+            -o-transition: color 2s;
+        }
+
+        .jssort11 .p:hover .t, .jssort11 .pav:hover .t, .jssort11 .p:hover .c, .jssort11 .pav:hover .c {
+            transition: none;
+            -moz-transition: none;
+            -webkit-transition: none;
+            -o-transition: none;
+        }
+
+        .jssort11 .p:hover, .jssort11 .pav:hover {
+            background: #333;
+        }
+
+        .jssort11 .pav, .jssort11 .p.pdn {
+            background: #97C6E5;
+        }
+
+
+        /* News and Announcements */
+          #jssor_1 {
+                margin: 0 auto;
+                width: 600px;
+                height: 300px;
+                background-color: rgba(0, 0, 0, 0);
+                overflow: hidden;
+                visibility: hidden;
+                margin-top: 15px;
+          }
+
+          .toLink {
+                background: #115393;
+                color: #FFFFFF;
+                text-decoration: none;
+                font-size: 14px;
+                padding: 7px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                border-radius: 5px;
+                margin-top: 5px;
+          }
+
+          .toQuote {
+            background: #115393;
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 7px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 5px;
+          }
+
+          #newsContent {
+                width: 50%;
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+          }
+
+          #updates {
+                width: 700px;
+                height: 100%;
+          }
+
+          #main_content {
+                width: 100%;
+          }
+
+          #mainInfo h2 {
+                margin-bottom: 0;
+          }
+
+          #left_content {
+                width: 100%;
+                display: block;
+          }
+
+          .mainContent {
+                margin: 0 auto;
+                width: 90%;
+          }
+
+          #newsContent h1 {
+                padding-top: 10px;
+                padding-left: 45px;
+          }
+
+          #baseNews {
+                padding-left: 40px;
+                height: 175px;
+                padding-bottom: 1px;
+          }
+
+          #baseNews li {
+                list-style-type: none;
+          }
+
+          #baseNews p {
+               font-size: 18px;
+               font-weight: bold;
+          }
+
+          .textItem a {
+               font-weight: bold;
+            /* text-shadow: -1px 0 #80c1ff, 0 1px #80c1ff, 1px 0 #80c1ff, 0 -1px #80c1ff; */
+          }
+
+        @media screen and (max-width: 1689px) {
+          #baseNews {
+               width: 500px;
+          }
+
+        }
+
+        @media screen and (max-width: 1529px) {
+          #left_content {
+               padding-left: 0;
+          }
+
+          .social_feed {
+               margin-right: 69px;
+          }
+        }
+
+        @media screen and (max-width: 1472px) {
+          #baseNews {
+               width: 400px;
+               padding-left: 10px;
+          }
+        }
+
+        @media screen and (max-width: 1366px) {
+         #jssor_1 {
+                position: relative;
+                margin: 0 auto;
+                top: 0px;
+                left: 0px;
+                width: 500px;
+                height: 300px;
+                background-color: rgba(0, 0, 0, 0);
+                float: right;
+                margin-top: 25px;
+                margin-right: 25px;
+                overflow: hidden;
+                visibility: hidden;
+          }
+
+          #left_content {
+               padding-left: 0;
+          }
+
+          #baseNews {
+              padding-left: 10px;
+              height: 190px;
+          }
+
+          .social_feed {
+              padding-right: 0px;
+              margin-right: 58px;
+          }
+        }
+
+        @media screen and (max-width: 1334px) {
+         #newsContent {
+              padding-bottom: 0;
+          }
+
+         #updates {
+              width: 350px;
+         }
+        }
+
+        @media screen and (max-width: 1327px) {
+         #header {
+              font-size: 20px;
+         }
+        }
+
+        @media screen and (max-width: 1299px) {
+         #newsContent h1 {
+              padding-left: 15px;
+         }
+
+         #baseNews {
+              padding-left: 0;
+         }
+
+         #baseNews ul {
+              padding-left: 15px;
+         }
+        }
+
+        @media screen and (max-width: 1242px) {
+          #jssor_1 {
+              width: 300px;
+          }
+
+          #baseNews {
+              width: 100%;
+              font-size: 14px;
+          }
+
+          #baseNews p {
+              font-weight: 200;
+          }
+        }
+
+        @media screen and (max-width: 1225px) {
+          #header {
+              font-size: 18px;
+          }
+        }
+
+        @media screen and (max-width: 1223px) {
+          .li2 {
+               display: none;
+          }
+        }
+
+        @media screen and (max-width: 1221px) {
+
+           .li2 {
+                display: none;
+            }
+
+           #li1 {
+
+           }
+        }
+
+        @media screen and (max-width: 1176px) {
+          #updates {
+              display: none;
+          }
+
+          #slides {
+              position: relative;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              width: 80%;
+          }
+
+          #jssor_1 {
+              float: none;
+              display: inline-block;
+          }
+
+          .social_feed {
+              padding-right: 0px;
+              margin-right: 25px;
+          }
+        }
+
+        @media screen and (max-width: 1135px) {
+         #header {
+              width: 100%;
+              text-align: center;
+              margin: auto;
+              z-index: 20;
+              font-family: Oswald;
+              overflow: scroll;
+         }
+        }
+
+        @media screen and (max-width: 1133px) {
+         #header {
+              font-size: 18px;
+         }
+
+         .mainNavigation {
+              padding-left: 0;
+         }
+        }
+
+        @media screen and (max-width: 926px) {
+         #header {
+             font-size: 16px;
+         }
+
+         .mainContent {
+             border-radius: 0;
+         }
+        }
+
+        @media screen and (max-width: 860px) {
+         #header {
+             font-size: 16px;
+         }
+        }
+
+        @media screen and (max-width: 822px) {
+          #left_content {
+              margin-left: 0;
+          }
+
+          .textItem {
+              font-size: 15px;
+          }
+
+          .footer_links {
+              font-size: 15px;
+          }
+        }
+
+        @media screen and (max-width: 819px) {
+         #header {
+              font-size: 14px;
+          }
+        }
+
+        @media screen and (max-width: 768px) {
+         #header {
+             font-size: 14px;
+         }
+
+         #testimonials {
+             font-size: 18px;
+          }
+
+         .footer_links {
+             font-size: 14px;
+         }
+
+        }
+
+        @media screen and (max-width: 719px) {
+         #header {
+             font-size: 12px;
+         }
+
+         .footer_links {
+             font-size: 12px;
+         }
+        }
+      </style>
+
+  </head>
+  <body>
+      <!-- JavaScript Body code -->
+      <div id="fb-root"></div>
+<script>
+  // Testimonial code
+  $('.testimonies div:first').show();
+  setInterval(function(){ $('.testimonies div:first-child').fadeOut().next('div').fadeIn().end().appendTo('.testimonies') },3000);</script>
+
+<!-- Start up the actual body stuff cause OH MY GOD ALL THIS CODE -->
+  <div id="container">
+    <div id="header">
+        <div id="header_navigation">
+            <div class="mainLinks">
+              <div id="quoteTab" style="top: 0; left: 0; padding-top: 15px; padding-bottom: 9px; z-index: 21;">
+                  <a href="Quotation.html" title="Get A Quote">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get A Quote!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+              </div>
+                <ul class="mainNavigation">
+                    <li><a href="index.html" title="Home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="News.html" title="News">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;News&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="AboutUs.html" title="About Us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="Products.html" title="Products">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Products&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="Resources.html" title="Resources">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resources&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="ContactUs.html" title="Contact Us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                </ul>
+          </div>
+        </div>
+    </div>
+    <div id="banner">
+       <img src="PictureRefs/indexBanner3.png" alt="Welcome to Mechanical Associates."/>
+    </div>
+      <!-- News for News and Announcement Page -->
+<!--       <div id="updates">
+        <h1 style="font-family: Oswald; font-weight: 300; border-radius: 5px;">News And Announcements</h1>
+        <div id="baseNews">
+          <ul style="padding-left: 14px">
+            <li id="li1"><p style="margin-bottom: 0">Request a quote!</p>Follow this link to go there right now <p style="margin-top: 15px; margin-bottom: 0"><a href="Quotation.html" class="toLink">Get A Quote!</a></li>
+            <li class="li2">------------------------------------------------</li>
+            <li id="li3"><p style="margin-bottom: 0">What is Mechanical Associates up to?</p>Just check out our gallery <p style="margin-top: 15px; margin-bottom: 0"><a href="Resources/Gallery.html" class="toLink">Gallery</a></li>
+            <li class="li2">------------------------------------------------</li>
+            <li id="li4"><p>Don't forget to follow us on Twitter, Facebook, Linked-In, and Google+!</p>
+              <div class="Logo"><a href="https://www.facebook.com/Mechanical-Associates-818192508251677/" title="MA on Facebook"><img src="PictureRefs/Facebook.png" width="50" height="50" alt="Facebook"/></a></div>
+              <div class="Logo"><a href="https://twitter.com/MechAssociates" title="Tweet us!"><img src="PictureRefs/Twitter.png" width="50" height="50" alt="Twitter"/></a></div>
+              <div class="Logo"><a href="https://www.linkedin.com/company/mechanical-associates" title="MA on LinkedIn"><img src="PictureRefs/LinkedIn.png" width="50" height="50" alt="LinkedIn"/></a></div>
+              <div class="Logo"><a href="https://plus.google.com/+MechanicalAssociatesFresno/posts" title="MA on Google+"><img src="PictureRefs/GooglePlus.png" alt="Google Plus"/></a></div></li>
+          </ul>
+       </div>
+      </div> -->
+    <div id="main_content">
+      <div id="left_content">
+        <div class="mainContent">
+          <div id="mainInfo" style="width: 100%;">
+            <h2><b>Your reliable source for water control products and solutions</b></h2>
+                Since our inception in 1993, Mechanical Associates' leading focus has been on our customers. With well over 50 years of combined experience in the industry,
+                we can assist our customers in determining the best product for each application according to their needs.
+                <p>
+                Let us help you today!<p>
+                <a href="ContactUs.html" class="toQuote" target="_blank">Contact Us!</a><b>,</b> <a href="Quotation.html" class="toQuote" target="_blank">Get a quote!</a><b>,</b> or call us at 1 (559) 272-8157.
+<!-- Start working on rewording for index and about us pages -->
+            <h2><b>Experts in water control gates and specialty valve products</b></h2>
+                <div id="ServedMarkets" style="width: 40%; float: right; margin-right: 40px">
+                  <h3 style="color: #FFFFFF; background-color: #115393; padding-top: 5px; padding-bottom: 5px; padding-left: 7px">Markets Served:</h3>
+                  <ul>
+                    <li>Water</li>
+                    <li>Wastewater</li>
+                    <li>Public Utilities</li>
+                    <li>Industrial</li>
+                    <li>Food Processing</li>
+                    <li>Farming</li>
+                    <li>Irrigation</li>
+                    <li>Dairy</li>
+                    <li>Flood Control</li>
+                    <li>Estuary/Wildlife Restoration &#38; Preservation</li>
+                    <li>Fish Hatcheries</li>
+                    <li>Fish Ladders</li>
+                    <li>Tidal Conditions</li>
+                    <li>Duck Clubs (Waterfowl Preservation)</li>
+                  </ul>
+                </div>
+                <div id="ProductLine" style="width: 35%">
+                  <h3 style="color: #FFFFFF; background-color: #115393; padding-top: 5px; padding-bottom: 5px; padding-left: 7px">Products:</h3>
+                  <ul>
+                    <li>Slide Gates</li>
+                    <li>Sluice Gates</li>
+                    <li>Weir Gates</li>
+                    <li>Downward Opening Weir Gates</li>
+                    <li>Flap Gates</li>
+                    <li>In-line Gates</li>
+                    <li>Combo Gates</li>
+                    <li>Canal Gates</li>
+                    <li>Stop Gates</li>
+                    <li>Stop Logs</li>
+                    <li>Bulkhead Gates</li>
+                    <li>Radial Gates</li>
+                    <li>Telescoping Valves</li>
+                    <li>Mud Valves</li>
+                    <li>Specialty Gates</li>
+                  </ul>
+                </div>
+            <h2><b>Sustainable corrosion resistant USA-made products</b></h2>
+                Mechanical Associates produces our entire product line in Fresno, California, utilizing stainless steel and/or marine grade aluminum for all product lines. All our products are designed to be compatible with potable water while sustaining the surrounding environment.
+                <p>
+            <h2><b>Low maintenance and durability</b></h2>
+                Our corrosion-resistant material and innovatively designed products are extremely durable and reliable translating into minimal maintenance. Ultimately this saves our customers money.
+            <p>
+            <h2><b>A proven track record with a diversified and custom product range</b></h2>
+                Mechanical Associates prides ourselves on providing the highest quality product and exceeding delivery expectations. With well over 1,800 options in our product lines we can identify the right application for you or custom build to your needs.<p>
+            <div id="testimonials" style="border-top: 1px solid black">
+              <div id="quotes">
+                <div class="textItem"><h1>Customer Focus and Reliability</h1>
+                  <a href="http://www.conteches.com/"><img src="PictureRefs/Contech.png" style="float: right; padding-left: 75px;" alt="ConTech"/></a>
+                  <a href="pdfs/LettersOfRecommendation/Contech-Masterson.pdf" target="_blank"><i>"Mechanical Associates responds in a timely manner while attending to the needs of our customers while producing a high quality product. Their entire staff is dedicated to making the best possible gates on the market."</i></a></div>
+                <div class="textItem"><h1>Engineered Products</h1>
+                  <a href="http://www.calwaterfowl.org/"><img src="PictureRefs/Birb.png" style="float: right; padding-left: 15px;" alt="California Waterfowl"/></a>
+                  <a href="pdfs/LettersOfRecommendation/CaliforniaWaterfowl.pdf" target="_blank"><i>"We appreciate the fact that Mechanical Associates has the ability to customize products for our unique project needs. California Waterfowl has been instrumental in the implementation of Mechanical Associates new products and or designs."</i></a></div>
+                <div class="textItem"><h1>Always Accommodating and Available</h1>
+                  <a href="http://www.clarkbrosinc.com/"><img src="PictureRefs/ClarkBros.png" style="float: right; padding-left: 15px;" alt="Clark Bros Inc."/></a>
+                  <a href="pdfs/LettersOfRecommendation/ClarkBros.pdf" target="_blank"><i>"From the onset of this relationship, the dedication of the product line by the MA team was quite obvious. Upon receipt and inspection of the gates, they were found to be per specification without flaw. Mechanical Associates has our complete endorsement."</i></a></div>
+                <div class="textItem"><h1>Producing a High Quality Product</h1>
+                  <a href="https://www.ferguson.com/"><img src="PictureRefs/Ferguson.png" style="float: right; padding-left: 15px; padding-bottom: 50px;" alt="Ferguson"/></a>
+                  <a href="pdfs/LettersOfRecommendation/Ferguson.pdf" target="_blank"><i>"Mechanical Associates successfully includes specification writing, bidding, submittal packages and finally providing high quality stainless steel fabricated slide gates, stop plates, mud valves, and other water control elements used in the field."</i></a></div>
+              </div>
+<!-- -->
+          </div>
+            <p style="text-align: center">Feel Free to contact one of our friendly sales experts for assistance!</p>
+          </div>
+          <div id="newsContent">
+      <!-- FOR A PICTURE SLIDE THING BUT THIS FORSAKEN CODE WILL BE THE DEATH OF ME BECAUSE THIS THING IS SO HELLA COMPLICATED -->
+      <div id="slides" style="display: block; width: 100%">
+        <div id="containment" style="display: inline-block; text-align: center; width: 100%">
+      <div id="jssor_1" style="position: relative; width: 602px; height: 302px; overflow: hidden; visibility: hidden; border: 1px solid #115393; background-color: #115393">
+          <!-- Loading Screen -->
+          <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+              <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+              <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+          </div>
+        <!-- Slide Thumbnails -->
+          <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden;">
+              <div data-p="112.50" style="display: none;">
+                  <img data-u="image" src="PictureRefs/SlideShow/DSCN0052.png" alt="Slide Gate"/>
+                  <div data-u="thumb">
+                      <img class="i" src="PictureRefs/SlideShow/thumb2.png" alt="Slide Gate thumb"/>
+                      <div class="t">Looking down</div>
+                      <div class="c"> </div>
+                  </div>
+              </div>
+              <div data-p="112.50" style="display: none;">
+                  <img data-u="image" src="PictureRefs/SlideShow/20131231_133532.png" alt="Installed Gate"/>
+                  <div data-u="thumb">
+                      <img class="i" src="PictureRefs/SlideShow/thumb1.png" alt="Installed Gate thumb"/>
+                      <div class="t">Gate installed</div>
+                      <div class="c"> </div>
+                  </div>
+              </div>
+              <div data-p="112.50" style="display: none;">
+                  <img data-u="image" src="PictureRefs/SlideShow/DSCN0071.png" alt="Shipping"/>
+                  <div data-u="thumb">
+                      <img class="i" src="PictureRefs/SlideShow/thumb3.png" alt="Shipping thumb"/>
+                      <div class="t">Shipment ready</div>
+                      <div class="c"> </div>
+                  </div>
+              </div>
+            <div data-p="112.50" style="display: none;">
+                  <img data-u="image" src="PictureRefs/SlideShow/MA009.png" alt="Something else... I dunno..."/>
+                  <div data-u="thumb">
+                      <img class="i" src="PictureRefs/SlideShow/thumb4.png" alt="This is a thing"/>
+                      <div class="t">Looking up</div>
+                      <div class="c"> </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Thumbnail Navigator. It's just taken off for now just cause why not -->
+<!--           <div data-u="thumbnavigator" class="jssort11" style="position:absolute;right:5px;top:0px;font-family:Arial, Helvetica, sans-serif;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;width:200px;height:300px;" data-autocenter="2"> -->
+              <!-- Thumbnail Item Skin Begin -->
+              <div data-u="slides" style="cursor: default;">
+                  <div data-u="prototype" class="p">
+                      <div data-u="thumbnailtemplate" class="tp"></div>
+                  </div>
+              </div>
+              <!-- Thumbnail Item Skin End -->
+                  <!-- Arrow Navigator WATCH ME AS I NAVIGATE HA HA HA HA HA -->
+          <div data-u="arrowleft" class="jssora02l" style="top:0px;left:8px;width:55px;height:55px;" data-autocenter="2"></div>
+          <div data-u="arrowright" class="jssora02r" style="top:0px;right:8px;width:55px;height:55px;" data-autocenter="2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
+        <div id="footer" style="position: absolute; bottom: 0; left: 0">
+            <div id="placingTogether">
+            <div class="footer_links" style="width: 900px">
+                <ul class="footer_navigation" style="padding-left: 0px;">
+                    <a href="index.html" title="Home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><a href="News.html" title="News">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;News&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><a href="AboutUs.html" title="About Us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><a href="Products.html" title="Products">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Products&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><a href="Resources.html" title="Resources">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resources&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><a href="ContactUs.html" title="Contact Us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </ul>
+            </div>
+            <div id="social_media">
+              <a class="Logo" title="MA on Facebook" href="https://www.facebook.com/Mechanical-Associates-818192508251677/"><img src="PictureRefs/Facebook.png" width="40" height="40" alt="Facebook"/></a>
+              <a class="Logo" title="Tweet us!" href="https://twitter.com/MechAssociates"><img src="PictureRefs/Twitter.png" width="40" height="40" alt="Twitter"/></a>
+              <a class="Logo" title="MA on LinkedIn" href="https://www.linkedin.com/company/mechanical-associates"><img src="PictureRefs/LinkedIn.png" width="40" height="40" alt="LinkedIn"/></a>
+              <a class="Logo" title="MA on Google+" href="https://plus.google.com/+MechanicalAssociatesFresno/posts"><img src="PictureRefs/GooglePlus.png" width="40" height="40" alt="Google Plus"/></a>
+            </div>
+          </div>
+          <div id="stuff" style="display: inline-block; float: right">
+            <div id="crafting">
+              <div id="MERICA">
+                <img src="PictureRefs/smol.png" width="50" height="50" alt="Made in the USA"/><br/>
+              </div>
+            </div>
+            <div id="Logo_Only">
+                <div class="Logo" style="text-align: right; padding-right: 25px;">
+                    <img src="PictureRefs/LOGOONLY2.png" width="85" height="50" alt="Mechanical Associates Logo"/><br/>
+                </div>
+            </div>
+            <div id="STEALER">
+            <div class="copyright" style="text-align: right; width: 100%; margin: auto; display: inline-block">
+                    Copyright &copy; 2016 Mechanical Associates<br/>
+                    All Rights Reserved.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="english">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script src="javaScript/testimonies.js"></script>
+    <title>Home | Mechanical Associates</title>
+
+    <!-- CSS stuff -->
+    <link type="text/css" rel="stylesheet" href="testMainCSS.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <link rel="icon" href="PictureRefs/MAfavicon.png">
+
+     <!-- JavaScript Code -->
+       <!-- Google+ -->
+      <script src="https://apis.google.com/js/platform.js" async defer></script>
+      <script type="text/javascript" src="javaScript/jquery-1.11.3.min.js"></script>
+      <script type="text/javascript" src="javaScript/jssor.slider.mini.js"></script>
+    <!-- use jssor.slider.debug.js instead for debug -->
+
+      <!-- MORE SCRIPT -->
+        <script type="text/javascript">
+         $(document).ready(function()
+         {
+             setupRotator();
+         });
+         function setupRotator()
+         {
+             if($('.textItem').length > 1)
+             {
+                 $('.textItem:first').addClass('current').fadeIn(1000);
+                 setInterval('textRotate()', 10000);
+             }
+         }
+             function textRotate()
+             {
+                 var current = $('#quotes > .current');
+                 if(current.next().length == 0)
+                 {
+                     current.removeClass('current').fadeOut(1000);
+                     $('.textItem:first').addClass('current').fadeIn(1000);
+                 }
+                 else
+                 {
+                     current.removeClass('current').fadeOut(1000);
+                     current.next().addClass('current').fadeIn(1000);
+                 }
+             }
+// Baked sweet and spicy chicken
+          // mobile call
+    //      <!--
+          if (screen.width <= 699) {
+          document.location = "mobileIndex.html";
+          } else if (screen.width >= 700 && screen.width <= 1074) {
+            document.location = "tabletIndex.html";
+          }
+          //-->
+
+          // Twitter things
+          window.twttr = (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+              t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+
+            t._e = [];
+            t.ready = function(f) {
+              t._e.push(f);
+            };
+
+            return t;
+          }(document, "script", "twitter-wjs"));
+        </script>
+
+    <!-- for image slider-->
+    <script>
+         jQuery(document).ready(function ($) {
+
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $Cols: 4,
+                $SpacingX: 4,
+                $SpacingY: 4,
+                $Orientation: 2,
+                $Align: 0
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 810);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+  <!-- CSS STUFF CAUSE DAMN SON -->
+      <style>
+        /* Twitter Widget */
+        iframe[id^='twitter-widget-']{
+          width:340px !important;
+        }
+
+        /* jssor slider arrow navigator skin 02 css */
+        /*
+        .jssora02l                  (normal)
+        .jssora02r                  (normal)
+        .jssora02l:hover            (normal mouseover)
+        .jssora02r:hover            (normal mouseover)
+        .jssora02l.jssora02ldn      (mousedown)
+        .jssora02r.jssora02rdn      (mousedown)
+        */
+        .jssora02l, .jssora02r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 55px;
+            height: 55px;
+            cursor: pointer;
+            background: url('PictureRefs/a02.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora02l { background-position: -3px -33px; }
+        .jssora02r { background-position: -63px -33px; }
+        .jssora02l:hover { background-position: -123px -33px; }
+        .jssora02r:hover { background-position: -183px -33px; }
+        .jssora02l.jssora02ldn { background-position: -3px -33px; }
+        .jssora02r.jssora02rdn { background-position: -63px -33px; }
+/* jssor slider thumbnail navigator skin 11 css */
+        /*.jssort11 .p
+        (normal).jssort11 .p:hover
+        (normal mouseover).jssort11 .pav
+        (active).jssort11 .pav:hover
+        (active mouseover).jssort11 .pdn
+        (mousedown)*/
+        .jssort11 .p {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 69px;
+            background: #181818;
+          }
+
+        .jssort11 .tp {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .jssort11 .i, .jssort11 .pav:hover .i {
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 60px;
+            height: 30px;
+            border: white 1px dashed;
+        }
+
+        * html .jssort11 .i {
+            width /**/: 62px;
+            height /**/: 32px;
+        }
+
+        .jssort11 .pav .i {
+            border: white 1px solid;
+        }
+
+        .jssort11 .t, .jssort11 .pav:hover .t {
+            position: absolute;
+            top: 3px;
+            left: 68px;
+            width: 129px;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            color: #095090;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .jssort11 .pav .t, .jssort11 .p:hover .t {
+            color: #fff;
+        }
+
+        .jssort11 .c, .jssort11 .pav:hover .c {
+            position: absolute;
+            top: 38px;
+            left: 3px;
+            width: 194px;
+            height: 32px;
+            line-height: 32px;
+            color: #fff;
+            font-size: 11px;
+            font-weight: 400;
+            overflow: hidden;
+        }
+
+        .jssort11 .pav .c, .jssort11 .p:hover .c {
+            color: #095090;
+        }
+
+        .jssort11 .t, .jssort11 .c {
+            transition: color 2s;
+            -moz-transition: color 2s;
+            -webkit-transition: color 2s;
+            -o-transition: color 2s;
+        }
+
+        .jssort11 .p:hover .t, .jssort11 .pav:hover .t, .jssort11 .p:hover .c, .jssort11 .pav:hover .c {
+            transition: none;
+            -moz-transition: none;
+            -webkit-transition: none;
+            -o-transition: none;
+        }
+
+        .jssort11 .p:hover, .jssort11 .pav:hover {
+            background: #333;
+        }
+
+        .jssort11 .pav, .jssort11 .p.pdn {
+            background: #97C6E5;
+        }
+
+
+        /* News and Announcements */
+          #jssor_1 {
+                position: relative;
+                margin: 0 auto;
+                top: 0px;
+                left: 0px;
+                width: 810px;
+                height: 300px;
+                background-color: rgba(0, 0, 0, 0);
+                float: right;
+                margin-top: 25px;
+                margin-right: 25px;
+                overflow: hidden;
+                visibility: hidden;
+          }
+
+          .toLink {
+                background: #115393;
+                color: #FFFFFF;
+                text-decoration: none;
+                font-size: 14px;
+                padding: 7px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                border-radius: 5px;
+                margin-top: 5px;
+          }
+
+          #newsContent {
+                width: 90%;
+                height: 405px;
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                background-color: rgba(255, 255, 255, 0.5);
+                border-radius: 5px;
+                padding-bottom: 30px;
+          }
+
+          #updates {
+                width: 700px;
+                height: 100%;
+          }
+
+          #main_content {
+                width: 100%;
+          }
+
+          #left_content {
+                width: 93%;
+                display: block;
+                padding-left: 92px;
+          }
+
+          .mainContent {
+                margin-left: 0;
+          }
+
+          #newsContent h1 {
+                padding-top: 10px;
+                padding-left: 45px;
+          }
+
+          #baseNews {
+                padding-left: 40px;
+                height: 175px;
+                padding-bottom: 1px;
+          }
+
+          #baseNews li {
+                list-style-type: none;
+          }
+
+          #baseNews p {
+               font-size: 18px;
+               font-weight: bold;
+          }
+
+          .textItem a {
+               font-weight: bold;
+/*                text-shadow: -1px 0 #80c1ff, 0 1px #80c1ff, 1px 0 #80c1ff, 0 -1px #80c1ff; */
+          }
+
+        @media screen and (max-width: 1689px) {
+          #newsContent {
+               height: 450px;
+               padding-bottom: 0;
+          }
+
+          #baseNews {
+               width: 500px;
+          }
+
+          #left_content {
+               padding-left: 89px;
+          }
+        }
+
+        @media screen and (max-width: 1529px) {
+          #left_content {
+               padding-left: 0;
+               margin-left: 69px;
+          }
+
+          .social_feed {
+               margin-right: 69px;
+          }
+        }
+
+        @media screen and (max-width: 1472px) {
+          #newsContent {
+               height: 475px;
+          }
+
+          #baseNews {
+               width: 400px;
+               padding-left: 10px;
+          }
+        }
+
+        @media screen and (max-width: 1366px) {
+         #jssor_1 {
+                position: relative;
+                margin: 0 auto;
+                top: 0px;
+                left: 0px;
+                width: 500px;
+                height: 300px;
+                background-color: rgba(0, 0, 0, 0);
+                float: right;
+                margin-top: 25px;
+                margin-right: 25px;
+                overflow: hidden;
+                visibility: hidden;
+          }
+
+          #newsContent {
+               width: 89%;
+          }
+
+          #left_content {
+               padding-left: 0;
+               margin-left: 58px;
+          }
+
+          #baseNews {
+              padding-left: 10px;
+              height: 190px;
+          }
+
+          .social_feed {
+              padding-right: 0px;
+              margin-right: 58px;
+          }
+        }
+
+        @media screen and (max-width: 1334px) {
+         #newsContent {
+              padding-bottom: 0;
+              height: 485px;
+          }
+
+         #updates {
+              width: 350px;
+         }
+        }
+
+        @media screen and (max-width: 1299px) {
+         #newsContent {
+              height: 475px;
+         }
+
+         #newsContent h1 {
+              padding-left: 15px;
+         }
+
+         #baseNews {
+              padding-left: 0;
+         }
+
+         #baseNews ul {
+              padding-left: 15px;
+         }
+        }
+
+        @media screen and (max-width: 1276px) {
+         #newsContent {
+              height: 515px;
+         }
+        }
+
+        @media screen and (max-width: 1242px) {
+          #jssor_1 {
+              width: 300px;
+          }
+
+          #baseNews {
+              width: 100%;
+              font-size: 14px;
+          }
+
+          #baseNews p {
+              font-weight: 200;
+          }
+        }
+
+        @media screen and (max-width: 1223px) {
+          .li2 {
+               display: none;
+          }
+
+          #newsContent {
+               height: 475px;
+          }
+        }
+
+        @media screen and (max-width: 1221px) {
+          #newsContent {
+              height: 475px;
+          }
+
+           .li2 {
+                display: none;
+            }
+
+           #li1 {
+
+           }
+        }
+
+        @media screen and (max-width: 1179px) {
+          #newsContent {
+              height: 505px;
+          }
+        }
+
+        @media screen and (max-width: 1176px) {
+          #newsContent {
+              height: 350px;
+          }
+
+          #updates {
+              display: none;
+          }
+
+          #slides {
+              position: relative;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              width: 80%;
+          }
+
+          #jssor_1 {
+              float: none;
+              display: inline-block;
+          }
+
+          #left_content {
+              margin-left: 25px;
+          }
+
+          .social_feed {
+              padding-right: 0px;
+              margin-right: 25px;
+          }
+        }
+
+        @media screen and (max-width: 1135px) {
+         #header {
+              width: 100%;
+              text-align: center;
+              margin: auto;
+              z-index: 20;
+              font-family: Oswald;
+              overflow: scroll;
+         }
+        }
+
+        @media screen and (max-width: 1133px) {
+         #header {
+              font-size: 18px;
+         }
+
+         .mainNavigation {
+              padding-left: 0;
+         }
+        }
+
+        @media screen and (max-width: 860px) {
+         #header {
+             font-size: 16px;
+         }
+        }
+
+        @media screen and (max-width: 822px) {
+          #left_content {
+              margin-left: 0;
+          }
+
+          .textItem {
+              font-size: 15px;
+          }
+        }
+
+        @media screen and (max-width: 768px) {
+         #header {
+             font-size: 14px;
+         }
+
+          #testimonials {
+             font-size: 18px;
+          }
+        }
+
+        @media screen and (max-width: 637px) {
+         #header {
+             font-size: 12px;
+         }
+        }
+      </style>
+
+  </head>
+  <body>
+      <!-- JavaScript Body code -->
+      <div id="fb-root"></div>
+<script>
+  // Facebook JS code
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  // Testimonial code
+  $('.testimonies div:first').show();
+  setInterval(function(){ $('.testimonies div:first-child').fadeOut().next('div').fadeIn().end().appendTo('.testimonies') },3000);
+
+  // Facebook feed
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Start up the actual body stuff cause OH MY GOD ALL THIS CODE -->
+  <div id="container">
+    <div id="header">
+        <div id="header_navigation">
+            <div class="mainLinks">
+              <div id="quoteTab" style="top: 0; left: 0; padding-top: 15px; padding-bottom: 9px; z-index: 21;">
+                  <a href="Quotation.html" title="Get A Quote">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get A Quote!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+              </div>
+                <ul class="mainNavigation">
+                    <li><a href="index.html" title="Home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="AboutUs.html" title="About Us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="Products.html" title="Products">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Products&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="Resources.html" title="Resources">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resources&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="ContactUs.html" title="Contact Us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                </ul>
+          </div>
+        </div>
+    </div>
+    <div id="banner">
+       <img src="PictureRefs/indexBanner2.png" alt="Welcome to Mechanical Associates."/>
+    </div>
+    <div id="newsContent">
+      <!-- FOR A PICTURE SLIDE THING BUT THIS FORSAKEN CODE WILL BE THE DEATH OF ME BECAUSE THIS THING IS SO HELLA COMPLICATED -->
+      <div id="slides">
+      <div id="jssor_1" style="position: relative; top: 0px; left: 0px; width: 810px; height: 300px; overflow: hidden; visibility: hidden">
+          <!-- Loading Screen -->
+          <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+              <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+              <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+          </div>
+          <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden;">
+              <div data-p="112.50" style="display: none;">
+                  <img data-u="image" src="PictureRefs/Slide.png" alt="Slide Gate"/>
+                  <div data-u="thumb">
+                      <img class="i" src="PictureRefs/Slidethumb.png" alt="Slide Gate thumb"/>
+                      <div class="t">Slide Gate</div>
+                      <div class="c">This gate is being worked on.</div>
+                  </div>
+              </div>
+              <div data-p="112.50" style="display: none;">
+                  <img data-u="image" src="PictureRefs/Canal.png" alt="Canal Gate"/>
+                  <div data-u="thumb">
+                      <img class="i" src="PictureRefs/Canalthumb.png" alt="Canal Gate thumb"/>
+                      <div class="t">US Canal Gate</div>
+                      <div class="c">Use this gate for any job.</div>
+                  </div>
+              </div>
+              <div data-p="112.50" style="display: none;">
+                  <img data-u="image" src="PictureRefs/DSCN1353.png" alt="Flap Gate"/>
+                  <div data-u="thumb">
+                      <img class="i" src="PictureRefs/DSCN1353.png" alt="Flap Gate thumb"/>
+                      <div class="t">Flap Gate</div>
+                      <div class="c">We make gates to meet specs.</div>
+                  </div>
+              </div>
+              <div data-p="112.50" style="display: none;">
+                  <img data-u="image" src="PictureRefs/Combo.png" alt="Combo Gate"/>
+                  <div data-u="thumb">
+                      <img class="i" src="PictureRefs/Combothumb.png" alt="Combo Gate"/>
+                      <div class="t">Combo Gate</div>
+                      <div class="c">It's a slide and a flap gate.</div>
+                  </div>
+              </div>
+          </div>
+          <!-- Thumbnail Navigator -->
+          <div data-u="thumbnavigator" class="jssort11" style="position:absolute;right:5px;top:0px;font-family:Arial, Helvetica, sans-serif;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;width:200px;height:300px;" data-autocenter="2">
+              <!-- Thumbnail Item Skin Begin -->
+              <div data-u="slides" style="cursor: default;">
+                  <div data-u="prototype" class="p">
+                      <div data-u="thumbnailtemplate" class="tp"></div>
+                  </div>
+              </div>
+              <!-- Thumbnail Item Skin End -->
+          </div>
+          <!-- Arrow Navigator WATCH ME AS I NAVIGATE HA HA HA HA HA -->
+          <span data-u="arrowleft" class="jssora02l" style="top:0px;left:8px;width:55px;height:55px;" data-autocenter="2"></span>
+          <span data-u="arrowright" class="jssora02r" style="top:0px;right:218px;width:55px;height:55px;" data-autocenter="2"></span>
+      </div>
+    </div>
+      <!-- news? :<c -->
+      <div id="updates">
+        <h1 style="font-family: Oswald; font-weight: 300; border-radius: 5px;">News And Announcements</h1>
+        <div id="baseNews">
+          <ul style="padding-left: 14px">
+            <li id="li1"><p>Request a quote!</p>Follow this link to go there right now <p style="margin-top: 5px; margin-bottom: 0"><a href="Quotation.html" class="toLink">Get A Quote!</a></li>
+            <li class="li2">------------------------------------------------</li>
+            <li id="li3"><p>Need to reach us or any of our representatives?</p>Just check out our contact page <p style="margin-top: 5px; margin-bottom: 0"><a href="ContactUs.html" class="toLink">Contact Us</a></li>
+            <li class="li2">------------------------------------------------</li>
+            <li id="li4"><p>Don't forget to follow us on Twitter, Facebook, Linked-In, and Google+!</p>
+              <div class="Logo"><a href="https://www.facebook.com/Mechanical-Associates-818192508251677/" title="MA on Facebook"><img src="PictureRefs/Facebook.png" width="50" height="50" alt="Facebook"/></a></div>
+              <div class="Logo"><a href="https://twitter.com/MechAssociates" title="Tweet us!"><img src="PictureRefs/Twitter.png" width="50" height="50" alt="Twitter"/></a></div>
+              <div class="Logo"><a href="https://www.linkedin.com/company/mechanical-associates" title="MA on LinkedIn"><img src="PictureRefs/LinkedIn.png" width="50" height="50" alt="LinkedIn"/></a></div>
+              <div class="Logo"><a href="https://plus.google.com/+MechanicalAssociatesFresno/posts" title="MA on Google+"><img src="PictureRefs/GooglePlus.png" alt="Google Plus"/></a></div></li>
+          </ul>
+       </div>
+      </div>
+    </div>
+    <div id="main_content">
+      <div class="social_feed">
+            <a id="twitter-timeline" class="twitter-timeline"  href="https://twitter.com/MechAssociates" data-widget-id="725324857672486912">Tweets by @MechAssociates</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            <div class="fb-page" data-href="https://www.facebook.com/Mechanical-Associates-818192508251677" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+      </div>
+      <div id="left_content">
+        <div class="mainContent">
+          <div id="testimonials" style="border-bottom: 1px solid black">
+              <div id="quotes">
+                <div class="textItem"><h1>Customer Focus and Reliability</h1>
+                  <a href="http://www.conteches.com/"><img src="PictureRefs/Contech.png" style="float: right; padding-left: 75px;" alt="ConTech"/></a>
+                  <a href="pdfs/LettersOfRecommendation/Contech-Masterson.pdf"><i>"Mechanical Associates responds in a timely manner while attending to the needs of our customers while producing a high quality product. Their entire staff is dedicated to making the best possible gates on the market."</i></a></div>
+                <div class="textItem"><h1>Engineered Products</h1>
+                  <a href="http://www.calwaterfowl.org/"><img src="PictureRefs/Birb.png" style="float: right; padding-left: 15px;" alt="California Waterfowl"/></a>
+                  <a href="pdfs/LettersOfRecommendation/CaliforniaWaterfowl.pdf"><i>"We appreciate the fact that Mechanical Associates has the ability to customize products for our unique project needs. California Waterfowl has been instrumental in the implementation of Mechanical Associates new products and or designs."</i></a></div>
+                <div class="textItem"><h1>Always Accommodating and Available</h1>
+                  <a href="http://www.clarkbrosinc.com/"><img src="PictureRefs/ClarkBros.png" style="float: right; padding-left: 15px;" alt="Clark Bros Inc."/></a>
+                  <a href="pdfs/LettersOfRecommendation/ClarkBros.pdf"><i>"From the onset of this relationship, the dedication of the product line by the MA team was quite obvious. Upon receipt and inspection of the gates, they were found to be per specification without flaw. Mechanical Associates has our complete endorsement."</i></a></div>
+                <div class="textItem"><h1>Producing a High Quality Product</h1>
+                  <a href="https://www.ferguson.com/"><img src="PictureRefs/Ferguson.png" style="float: right; padding-left: 15px; padding-bottom: 50px;" alt="Ferguson"/></a>
+                  <a href="pdfs/LettersOfRecommendation/Ferguson.pdf"><i>"Mechanical Associates successfully includes specification writing, bidding, submittal packages and finally providing high quality stainless steel fabricated slide gates, stop plates, mud valves, and other water control elements used in the field."</i></a></div>
+              </div>
+          </div>
+          <div id="mainInfo" style="width: 100%;">
+            <h2><b>Expert control solutions for water flow.</b></h2>
+                Upgrade from traditional cast-iron or steel gates to durable and modern water flow gates made of marine grade aluminum and stainless steel.<p>
+                <ul style="font-size: 15px">
+                    <li>Corrosion-resistant, innovatively designed, quality fabricated mechanical gates</li>
+                    <li>Durable, low maintenance, cost-effective alternatives to steel or cast iron gates</li>
+                    <li>An extensive product range made in the USA at highly competitive prices</li>
+                </ul><p>
+            <h2><b>What are the benefits of installing aluminum or stainless steel water flow gates?</b></h2>
+                <ul style="font-size: 15px">
+                    <li>Lightweight yet durable materials make them easy to install and maintain</li>
+                    <li>Innovative design and quality fabrication prevents malfunction and leaks</li>
+                    <li>Quality engineering design ensures less damage due to wear and tear</li>
+                    <li>Long-term savings due to lower repair costs</li>
+                    <li>FREE consultation and technological expertise for installation and repair</li>
+                </ul>
+            <h2><b>Innovative products contribute to sustainable progress.</b></h2>
+                Complementing a standard product range that includes canal gates, slide gates, flap gates and a range of specialty products and accessories, Mechanical Associates also undertakes the manufacturing of
+                customized water flow control gates, according to the special requirements of clients and projects.
+                <p>
+                Mechanical Associates was formed with a vision to conserve and control one of our most precious resources, water, by ensuring safe and efficient distribution to support sustainable
+                agricultural and industrial progress.
+                <p>
+                The company is committed to consistently innovate and continuously improve upon its quality standards, engineering, and fabrication process of its manufacturing unit in which is strategically located in
+                the San Joaquin Valley, in the heart of the most agriculturally productive regions in the world.
+                <p>
+            <h2><b>A proven track record and a diversified product range.</b></h2>
+                Depending on the nature of the projects and its requirements, Mechanical Associates possesses the necessary expertise, qualified personnel, current manufacturing capabilities, and the experience to
+                fabricate specialty products. Some of the typical water flow applications that the company&#039;s product range caters to include:<p>
+                <ul style="font-size: 15px">
+                    <li>Irrigation and Flood Control Districts</li>
+                    <li>Municipal Water and Waste Water Treatment Plants</li>
+                    <li>Water Storage</li>
+                    <li>Industrial Waste Water</li>
+                    <li>Food Processing / Ag Waster Water Applications</li>
+                    <li>Estuaries</li>
+                </ul>
+            <h2><b>Your reliable source for canal gates, slide gates and flap gates.</b></h2>
+                Quality fabrication and innovative engineering designs distinguish the product range of Mechanical Associates. All products are fabricated using either marine grade stainless steel or aluminum, which ensures
+                durable, long-lasting service and requires low-maintenance. Subject to customized design and fabrication needs, alternative materials such as galvanized A36 steel.
+            <p>For further information on Mechanical Associates or for current pricing information on the above-mention products or any new product which has been added to the product line since the most recent edition of our catalog, please contact Mechanical Associates, directly. Our experienced staff will gladly assist you with questions you may have or purchasing decisions you need to make.
+          </div>
+        </div>
+      </div>
+        <div id="footer" style="position: absolute; bottom: 0; left: 0">
+            <div id="placingTogether">
+            <div class="footer_links" style="width: 900px">
+                <ul class="footer_navigation" style="padding-left: 0px;">
+                    <a href="index.html" title="Home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><a href="AboutUs.html" title="About Us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><a href="Products.html" title="Products">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Products&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><a href="Resources.html" title="Resources">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resources&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><a href="ContactUs.html" title="Contact Us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </ul>
+            </div>
+            <div id="social_media">
+              <a class="Logo" title="MA on Facebook" href="https://www.facebook.com/Mechanical-Associates-818192508251677/"><img src="PictureRefs/Facebook.png" width="40" height="40" alt="Facebook"/></a>
+              <a class="Logo" title="Tweet us!" href="https://twitter.com/MechAssociates"><img src="PictureRefs/Twitter.png" width="40" height="40" alt="Twitter"/></a>
+              <a class="Logo" title="MA on LinkedIn" href="https://www.linkedin.com/company/mechanical-associates"><img src="PictureRefs/LinkedIn.png" width="40" height="40" alt="LinkedIn"/></a>
+              <a class="Logo" title="MA on Google+" href="https://plus.google.com/+MechanicalAssociatesFresno/posts"><img src="PictureRefs/GooglePlus.png" width="40" height="40" alt="Google Plus"/></a>
+            </div>
+          </div>
+          <div id="stuff" style="display: inline-block; float: right">
+            <div id="crafting">
+              <div id="MERICA">
+                <img src="PictureRefs/smol.png" width="50" height="50" alt="Made in the USA"/><br/>
+              </div>
+            </div>
+            <div id="Logo_Only">
+                <div class="Logo" style="text-align: right; padding-right: 25px;">
+                    <img src="PictureRefs/LOGOONLY2.png" width="85" height="50" alt="Mechanical Associates Logo"/><br/>
+                </div>
+            </div>
+            <div id="STEALER">
+            <div class="copyright" style="text-align: right; width: 100%; margin: auto; display: inline-block">
+                    Copyright &copy; 2016 Mechanical Associates<br/>
+                    All Rights Reserved.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

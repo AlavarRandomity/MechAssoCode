@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+  <head>
+    <title>Oops! | Mechanical Associates</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+
+    <!-- CSS stuff -->
+    <link type="text/css" rel="stylesheet" href="mainTabletCSS.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <link rel="icon" href="PictureRefs/MAfavicon.png">
+
+    <!-- Mobile-to-Website Code Stuff -->
+        <script type="text/javascript">
+          $(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+       //   <!--
+               if (screen.width >= 1075) {
+              document.location = "404.html";
+              } else if (screen.width <= 699) {
+              document.location = "mobile404.html";
+              }
+              //-->
+        </script>
+    <style>
+      .link404 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+         }
+
+         .toQuote {
+            background: #115393;
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 7px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 5px;
+          }
+    </style>
+
+  </head>
+  <body>
+    <div data-role="page">
+
+      <div data-role="header" id="header">
+          <a href="index.html" title="Mechanical Associates"><img src="PictureRefs/MechanicalAssociates_Logo.png" style="height:70px; padding-top: 10px; padding-left: 10px;"/></a>
+        <div class="links">
+                <ul class="actualnavigation">
+                    <a href="index.html" title="Home">&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;</a><a href="News.html" title="News">&nbsp;&nbsp;&nbsp;News&nbsp;&nbsp;&nbsp;</a><a href="AboutUs.html" title="About Us">&nbsp;&nbsp;&nbsp;About Us&nbsp;&nbsp;&nbsp;</a><a href="Products.html" title="Products">&nbsp;&nbsp;&nbsp;Products&nbsp;&nbsp;&nbsp;</a><a href="Resources.html" title="Resources">&nbsp;&nbsp;&nbsp;Resources&nbsp;&nbsp;&nbsp;</a><a href="ContactUs.html" title="Contact Us">&nbsp;&nbsp;&nbsp;Contact Us&nbsp;&nbsp;&nbsp;</a>
+                </ul>
+            </div>
+      </div>
+
+      <div data-role="main" class="ui-content" id="ui-content">
+      <div id="banner">
+            <img src="PictureRefs/aboutBanner.png"></img>
+        </div>
+        <div id="main_content">
+      <div id="error" style="position: relative; width: 45%; height: 450px; background-color: rgba(255, 255, 255, 0.5); margin: auto">
+        <div id="errorBody" style="position: relative; width: 85%; height: 65%; text-align: center; margin: auto">
+          <div style="padding-top: 20px">
+          Uh oh! It looks like we accidentally forgot to close a slide gate, and now the page you were looking for has been lost in the tide!<p>
+          We apologize for the inconvenience.
+          <p style="margin-bottom: 0">You can <div class="link404" style="margin-top: 2px"><a href="javascript:javascript:history.go(-1)" class="toQuote" target="_blank">click here to go back to previous page</a>,</div> <div class="link404" style="margin-bottom: 2px"><a href="ContactUs.html" class="toQuote" target="_blank">contact us</a>,</div> click the links in the navagation on top of the page to start over, <br/>call us at 1(559)272-8157 for quick help
+          <p>
+            ...or just hang out here and watch some running water.
+            <div>
+            <img src="#" alt="LOL running water"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div data-role="footer" id="footer" data-position="fixed" style="position: absolute; bottom: 0; left: 0">
+        <div id="MERICUR">
+          <img src="PictureRefs/smol.png" width="75" height="75" style="margin-top: 15px"></img>
+        </div>
+        <div id="socMedia" style="display: block; margin: 0 auto; width: 300px">
+          <h3>
+           Follow Mechanical Associates
+             <div class="Logo" style="margin-left: 10px"><a href="https://www.facebook.com/Mechanical-Associates-818192508251677/"><img src="PictureRefs/Facebook.png" width="50" height="50"></img></a></div>
+             <div class="Logo"><a href="https://twitter.com/MechAssociates"><img src="PictureRefs/Twitter.png" width="50" height="50"></img></a></div>
+             <div class="Logo"><a href="https://www.linkedin.com/company/mechanical-associates"><img src="PictureRefs/LinkedIn.png" width="50" height="50"></img></a></div>
+             <div class="Logo" style="margin-right: 10px"><a href="https://plus.google.com/+MechanicalAssociatesFresno/posts"><img src="PictureRefs/GooglePlus.png"></img></a></div>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

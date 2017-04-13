@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="english">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script src="javaScript/testimonies.js"></script>
+    <title>News and Announcements | Mechanical Associates</title>
+
+    <!-- CSS stuff -->
+    <link type="text/css" rel="stylesheet" href="testMainCSS.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <link rel="icon" href="PictureRefs/MAfavicon.png">
+
+     <!-- JavaScript Code -->
+       <!-- Google+ -->
+      <script src="https://apis.google.com/js/platform.js" async defer></script>
+      <script type="text/javascript" src="javaScript/jquery-1.11.3.min.js"></script>
+    <!-- use jssor.slider.debug.js instead for debug -->
+
+      <!-- MORE SCRIPT -->
+        <script type="text/javascript">
+          // mobile call
+    //      <!--
+          if (screen.width <= 699) {
+          document.location = "mobileNews.html";
+          } else if (screen.width >= 700 && screen.width <= 1074) {
+            document.location = "tabletNews.html";
+          }
+          //-->
+
+          // Twitter things
+          window.twttr = (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+              t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+
+            t._e = [];
+            t.ready = function(f) {
+              t._e.push(f);
+            };
+
+            return t;
+          }(document, "script", "twitter-wjs"));
+        </script>
+  <!-- CSS STUFF CAUSE DAMN SON -->
+      <style>
+        /* Twitter Widget */
+        iframe[id^='twitter-widget-']{
+          width:340px !important;
+        }
+
+          .galleryBoxes {
+                display: inline-block;
+          }
+
+          .toLink {
+                background: #115393;
+                color: #FFFFFF;
+                text-decoration: none;
+                font-size: 14px;
+                padding: 7px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                border-radius: 5px;
+                margin-top: 5px;
+          }
+
+          #newsContent {
+                width: 90%;
+                height: 405px;
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                background-color: rgba(255, 255, 255, 0.5);
+                border-radius: 5px;
+                padding-bottom: 30px;
+          }
+
+          #updates {
+                width: 700px;
+                height: 100%;
+          }
+
+          #main_content {
+                width: 100%;
+          }
+
+          #left_content {
+                width: 93%;
+                display: block;
+                padding-left: 92px;
+          }
+
+          .mainContent {
+                margin-left: 0;
+          }
+
+          #newsContent h1 {
+                padding-top: 10px;
+                padding-left: 45px;
+          }
+
+          #baseNews {
+                padding-left: 40px;
+                height: 175px;
+                padding-bottom: 1px;
+          }
+
+          #baseNews li {
+                list-style-type: none;
+          }
+
+          #baseNews p {
+               font-size: 18px;
+               font-weight: bold;
+          }
+
+          .textItem a {
+               font-weight: bold;
+/*                text-shadow: -1px 0 #80c1ff, 0 1px #80c1ff, 1px 0 #80c1ff, 0 -1px #80c1ff; */
+          }
+
+        @media screen and (max-width: 1689px) {
+          #newsContent {
+               height: 450px;
+               padding-bottom: 0;
+          }
+
+          #baseNews {
+               width: 500px;
+          }
+
+          #left_content {
+               padding-left: 89px;
+          }
+        }
+
+        @media screen and (max-width: 1529px) {
+          #left_content {
+               padding-left: 0;
+               margin-left: 69px;
+          }
+
+          .social_feed {
+               margin-right: 69px;
+          }
+
+          #baseNews{
+               width: 300px;
+          }
+        }
+
+        @media screen and (max-width: 1472px) {
+          #newsContent {
+               height: 475px;
+          }
+
+          #baseNews {
+               width: 400px;
+               padding-left: 10px;
+          }
+        }
+
+        @media screen and (max-width: 1383px) {
+          #baseNews {
+               width: 350px;
+          }
+        }
+
+        @media screen and (max-width: 1366px) {
+          #newsContent {
+               width: 89%;
+          }
+
+          #left_content {
+               padding-left: 0;
+               margin-left: 58px;
+          }
+
+          #baseNews {
+              padding-left: 10px;
+              height: 190px;
+          }
+
+          .social_feed {
+              padding-right: 0px;
+              margin-right: 58px;
+          }
+        }
+
+        @media screen and (max-width: 1342px) {
+          #baseNews {
+              width: 300px;
+          }
+        }
+
+        @media screen and (max-width: 1334px) {
+         #newsContent {
+              padding-bottom: 0;
+              height: 485px;
+          }
+
+         #updates {
+              width: 350px;
+         }
+        }
+
+        @media screen and (max-width: 1306px) {
+         #header {
+              font-size: 20px;
+         }
+        }
+
+        @media screen and (max-width: 1299px) {
+         #newsContent {
+              height: 475px;
+         }
+
+         #newsContent h1 {
+              padding-left: 15px;
+         }
+
+         #baseNews {
+              padding-left: 0;
+         }
+
+         #baseNews ul {
+              padding-left: 15px;
+         }
+        }
+
+        @media screen and (max-width: 1276px) {
+         #newsContent {
+              height: 515px;
+         }
+        }
+
+        @media screen and (max-width: 1275px) {
+         #baseNews {
+              width: 250px;
+         }
+        }
+
+        @media screen and (max-width: 1242px) {
+          #baseNews {
+              width: 200px;
+              font-size: 14px;
+          }
+
+          #baseNews p {
+              font-weight: 200;
+          }
+        }
+
+        @media screen and (max-width: 1223px) {
+          .li2 {
+               display: none;
+          }
+
+          #newsContent {
+               height: 475px;
+          }
+        }
+
+        @media screen and (max-width: 1222px) {
+          #header {
+               font-size: 18px;
+          }
+        }
+
+        @media screen and (max-width: 1221px) {
+          #newsContent {
+              height: 475px;
+          }
+
+           .li2 {
+                display: none;
+            }
+
+           #li1 {
+
+           }
+        }
+
+        @media screen and (max-width: 1179px) {
+          #newsContent {
+              height: 505px;
+          }
+        }
+
+        @media screen and (max-width: 1176px) {
+          #newsContent {
+              height: 350px;
+          }
+
+          #slides {
+              position: relative;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              width: 80%;
+          }
+
+          #left_content {
+              margin-left: 25px;
+          }
+
+          .social_feed {
+              padding-right: 0px;
+              margin-right: 25px;
+          }
+        }
+
+        @media screen and (max-width: 1137px) {
+         #header {
+              font-size: 16px;
+         }
+        }
+
+        @media screen and (max-width: 1135px) {
+         #header {
+              width: 100%;
+              text-align: center;
+              margin: auto;
+              z-index: 20;
+              font-family: Oswald;
+              overflow: scroll;
+         }
+        }
+
+        @media screen and (max-width: 1133px) {
+         .mainNavigation {
+              padding-left: 0;
+         }
+        }
+
+        @media screen and (max-width: 1050px) {
+         #header {
+              font-size: 15px;
+         }
+        }
+
+        @media screen and (max-width: 1008px) {
+         #header {
+              font-size: 14px;
+         }
+        }
+
+        @media screen and (max-width: 965px) {
+         #header {
+              font-size: 12px;
+         }
+        }
+
+        @media screen and (max-width: 880px) {
+         #header {
+              font-size: 10px;
+         }
+        }
+
+        @media screen and (max-width: 822px) {
+          #left_content {
+              margin-left: 0;
+          }
+
+          .textItem {
+              font-size: 15px;
+          }
+        }
+
+        @media screen and (max-width: 794px) {
+         #header {
+             font-size: 8px;
+         }
+        }
+
+        @media screen and (max-width: 709px) {
+         #header {
+             font-size: 6px;
+         }
+        }
+      </style>
+  </head>
+  <body>
+      <!-- JavaScript Body code -->
+      <div id="fb-root"></div>
+<script>
+  // Facebook JS code
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  // Testimonial code
+  $('.testimonies div:first').show();
+  setInterval(function(){ $('.testimonies div:first-child').fadeOut().next('div').fadeIn().end().appendTo('.testimonies') },3000);
+
+  // Facebook feed
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Start up the actual body stuff cause OH MY GOD ALL THIS CODE -->
+  <div id="container">
+    <div id="header">
+        <div id="header_navigation">
+            <span class="company_logo">
+                <a href="index.html" title="Mechanical Associates"><img src="PictureRefs/MechanicalAssociates_Logo.png" height="70" alt="Mechanical Associates Logo"/></a>
+            </span>
+            <div class="links">
+                <ul class="actualnavigation">
+                    <li><a href="index.html" title="Home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="News.html" title="News">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;News&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="AboutUs.html" title="About Us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="Products.html" title="Products">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Products&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="Resources.html" title="Resources">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resources&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li><a href="ContactUs.html" title="Contact Us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="banner">
+       <img src="PictureRefs/indexBanner3.png" alt="Welcome to Mechanical Associates."/>
+    </div>
+    <div id="main_content">
+      <div class="social_feed">
+            <a id="twitter-timeline" class="twitter-timeline"  href="https://twitter.com/MechAssociates" data-widget-id="725324857672486912">Tweets by @MechAssociates</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            <div class="fb-page" data-href="https://www.facebook.com/Mechanical-Associates-818192508251677" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+      </div>
+      <div id="left_content">
+        <div class="mainContent">
+          <div id="mainInfo" style="width: 100%; height: 275px">
+            <div id="updates" style="width: 100%">
+        <h2 style="font-family: Oswald; font-weight: 300; width: 100%; border-bottom: 1px solid black">News And Announcements</h2>
+        <div id="baseNews">
+          <ul style="padding-left: 14px">
+            <li id="li1"><p style="margin-bottom: 0">Request a quote!</p>Follow this link to go there right now <p style="margin-top: 15px; margin-bottom: 0"><a href="Quotation.html" class="toLink">Get A Quote!</a></li>
+            <li class="li2">------------------------------------------------</li>
+            <li id="li1"><p style="margin-bottom: 0; font-weight: normal; font-size: 16px">Have any questions? Concerns? Casual chat? <p style="margin-top: 15px; margin-bottom: 0"><a href="ContactUs.html" class="toLink">Contact us!</a></li>
+          </ul>
+       </div>
+      </div>
+          </div>
+          <div style="display: block; text-align: center">
+            <h2 style="font-family: Oswald; font-weight: 300; width: 100%; border-bottom: 1px solid black">Gallery</h2>
+             <p>
+              <div class="galleryBoxes" style="width: 350px; height: 350px; background-color: #FFFFFF">
+                <a href="News/Gallery/Conferences.html"><img src="PictureRefs/Gallery/ConferencesThumb.png" alt="Conferences" style="width: 100%"/></a>
+              </div>
+              <div class="galleryBoxes" style="width: 350px; height: 350px; background-color: #FFFFFF">
+                <a href="News/Gallery/Fieldwork.html"><img src="PictureRefs/Gallery/GateInstallationThumb.png" alt="Gate Installation" style="width: 100%"/></a>
+              </div>
+              <div class="galleryBoxes" style="width: 350px; height: 350px; background-color: #FFFFFF; text-align: center">
+                <a href="News/Gallery/Shop.html"><img src="PictureRefs/Gallery/ShopThumb.png" alt="In the shop" style="width: 100%"/></a>
+              </div>
+          </div>
+        </div>
+      </div>
+        <div id="footer" style="position: absolute; bottom: 0; left: 0">
+            <div id="placingTogether">
+            <div class="footer_links" style="width: 900px">
+                <ul class="footer_navigation" style="padding-left: 0px;">
+                    <li><a href="index.html" title="Home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="News.html" title="News">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;News&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="AboutUs.html" title="About Us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="Products.html" title="Products">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Products&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="Resources.html" title="Resources">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resources&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="ContactUs.html" title="Contact Us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                </ul>
+            </div>
+            <div id="social_media">
+              <a class="Logo" title="MA on Facebook" href="https://www.facebook.com/Mechanical-Associates-818192508251677/"><img src="PictureRefs/Facebook.png" width="40" height="40" alt="Facebook"/></a>
+              <a class="Logo" title="Tweet us!" href="https://twitter.com/MechAssociates"><img src="PictureRefs/Twitter.png" width="40" height="40" alt="Twitter"/></a>
+              <a class="Logo" title="MA on LinkedIn" href="https://www.linkedin.com/company/mechanical-associates"><img src="PictureRefs/LinkedIn.png" width="40" height="40" alt="LinkedIn"/></a>
+              <a class="Logo" title="MA on Google+" href="https://plus.google.com/+MechanicalAssociatesFresno/posts"><img src="PictureRefs/GooglePlus.png" width="40" height="40" alt="Google Plus"/></a>
+            </div>
+          </div>
+          <div id="stuff" style="display: inline-block; float: right">
+            <div id="crafting">
+              <div id="MERICA">
+                <img src="PictureRefs/smol.png" width="50" height="50" alt="Made in the USA"/><br/>
+              </div>
+            </div>
+            <div id="Logo_Only">
+                <div class="Logo" style="text-align: right; padding-right: 25px;">
+                    <img src="PictureRefs/LOGOONLY2.png" width="85" height="50" alt="Mechanical Associates Logo"/><br/>
+                </div>
+            </div>
+            <div id="STEALER">
+            <div class="copyright" style="text-align: right; width: 100%; margin: auto; display: inline-block">
+                    Copyright &copy; 2016 Mechanical Associates<br/>
+                    All Rights Reserved.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

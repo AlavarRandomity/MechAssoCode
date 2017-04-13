@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+  <head>
+    <title>Home | Mechanical Associates</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href=”http://www.mechanical-associates.com” rel=”publisher” />
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="javaScript/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="javaScript/jssor.slider.mini.js"></script>
+
+    <!-- CSS stuff -->
+    <link type="text/css" rel="stylesheet" href="mainMobileCSS.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <link rel="icon" href="PictureRefs/MAfavicon.png">
+
+    <!-- Mobile-to-Website Code Stuff -->
+        <script type="text/javascript">
+         // <!--
+              if (screen.width >= 700 && screen.width <= 1074) {
+              document.location = "tabletIndex.html";
+              } else if (screen.width >= 1075) {
+              document.location = "index.html";
+              }
+              //-->
+        </script>
+        <!-- for image slider-->
+    <script>
+         jQuery(document).ready(function ($) {
+
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $Cols: 4,
+                $SpacingX: 4,
+                $SpacingY: 4,
+                $Orientation: 2,
+                $Align: 0
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 600);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+  <!-- CSS STUFF CAUSE DAMN SON -->
+      <style>
+        /* Twitter Widget */
+        iframe[id^='twitter-widget-']{
+          width:340px !important;
+        }
+
+        /* jssor slider arrow navigator skin 02 css */
+        /*
+        .jssora02l                  (normal)
+        .jssora02r                  (normal)
+        .jssora02l:hover            (normal mouseover)
+        .jssora02r:hover            (normal mouseover)
+        .jssora02l.jssora02ldn      (mousedown)
+        .jssora02r.jssora02rdn      (mousedown)
+        */
+        .jssora02l, .jssora02r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 55px;
+            height: 55px;
+            cursor: pointer;
+            background: url('PictureRefs/a02.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora02l { background-position: -3px -33px; }
+        .jssora02r { background-position: -63px -33px; }
+        .jssora02l:hover { background-position: -123px -33px; }
+        .jssora02r:hover { background-position: -183px -33px; }
+        .jssora02l.jssora02ldn { background-position: -3px -33px; }
+        .jssora02r.jssora02rdn { background-position: -63px -33px; }
+/* jssor slider thumbnail navigator skin 11 css *//*.jssort11 .p
+        (normal).jssort11 .p:hover
+        (normal mouseover).jssort11 .pav
+        (active).jssort11 .pav:hover
+        (active mouseover).jssort11 .pdn
+        (mousedown)*/
+        .jssort11 .p {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 69px;
+            background: #181818;
+          }
+
+        .jssort11 .tp {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .jssort11 .i, .jssort11 .pav:hover .i {
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 60px;
+            height: 30px;
+            border: white 1px dashed;
+        }
+
+        * html .jssort11 .i {
+            width /**/: 62px;
+            height /**/: 32px;
+        }
+
+        .jssort11 .pav .i {
+            border: white 1px solid;
+        }
+
+        .jssort11 .t, .jssort11 .pav:hover .t {
+            position: absolute;
+            top: 3px;
+            left: 68px;
+            width: 129px;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            color: #095090;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .jssort11 .pav .t, .jssort11 .p:hover .t {
+            color: #fff;
+        }
+
+        .jssort11 .c, .jssort11 .pav:hover .c {
+            position: absolute;
+            top: 38px;
+            left: 3px;
+            width: 194px;
+            height: 32px;
+            line-height: 32px;
+            color: #fff;
+            font-size: 11px;
+            font-weight: 400;
+            overflow: hidden;
+        }
+
+        .jssort11 .pav .c, .jssort11 .p:hover .c {
+            color: #095090;
+        }
+
+        .jssort11 .t, .jssort11 .c {
+            transition: color 2s;
+            -moz-transition: color 2s;
+            -webkit-transition: color 2s;
+            -o-transition: color 2s;
+        }
+
+        .jssort11 .p:hover .t, .jssort11 .pav:hover .t, .jssort11 .p:hover .c, .jssort11 .pav:hover .c {
+            transition: none;
+            -moz-transition: none;
+            -webkit-transition: none;
+            -o-transition: none;
+        }
+
+        .jssort11 .p:hover, .jssort11 .pav:hover {
+            background: #333;
+        }
+
+        .jssort11 .pav, .jssort11 .p.pdn {
+            background: #97C6E5;
+        }
+
+
+        /* News and Announcements */
+          #jssor_1 {
+                position: relative;
+                margin: 0 auto;
+                top: 0px;
+                left: 0px;
+                width: 600px;
+                height: 300px;
+                float: right;
+                overflow: hidden;
+                visibility: hidden;
+                display: block;
+                text-align: center;
+          }
+    </style>
+  </head>
+  <body>
+    <div data-role="page">
+
+      <div data-role="header" id="header" style="height: 80px">
+          <div id="banner">
+           <img src="PictureRefs/indexBanner2.png" alt="Welcome to Mechanical Associates."/>
+        </div>
+      </div>
+
+      <div data-role="main" class="ui-content" id="ui-content">
+      <div id="mobile_navigation">
+        <div class="links">
+          <a href="index.html" title="Home" alt="Home"><div class="mobileLink" style="border-top: 2px solid #051729; border-bottom: 1px solid #051729;">Home</div></a>
+          <a href="News.html" title="News and Announcements"><div class="mobileLink" style="border-bottom: 1px solid #051729;">News and Announcements</div></a>
+          <a href="AboutUs.html" title="About Us" alt="About Us"><div class="mobileLink" style="border-bottom: 1px solid #051729;">About Us</div></a>
+          <a href="Products.html" title="Products" alt="Products"><div class="mobileLink" style="border-bottom: 1px solid #051729;">Products</div></a>
+          <a href="Resources.html" title="Resources" alt="Resources"><div class="mobileLink" style="border-bottom: 1px solid #051729;">Resources</div></a>
+          <a href="ContactUs.html" title="Contact Us" alt="Contact Us"><div class="mobileLink" style="border-bottom: 2px solid #051729;">Contact Us</div></a>
+        </div>
+      </div>
+      <div id="mainInfo">
+            <img src="PictureRefs/mobileMainBrag.png" style="padding-top: 10px"></img>
+                Since our inception in 1993, Mechanical Associates' leading focus has been on our customers. With well over 50 years of combined experience in the industry,
+                we can assist our customers in determining the best product for each application according to their needs.
+                <p>
+                Let us help you today!<p>
+<!-- Start working on rewording for index and about us pages -->
+            <h2><b>Expert control solutions for water flow.</b></h2>
+                <div id="ServedMarkets">
+                  <h3 style="color: #FFFFFF; background-color: #115393; padding-top: 5px; padding-bottom: 5px; padding-left: 7px">Markets Served:</h3>
+                  <ul>
+                    <li>Water</li>
+                    <li>Wastewater</li>
+                    <li>Public Utilities</li>
+                    <li>Industrial</li>
+                    <li>Food Processing</li>
+                    <li>Farming</li>
+                    <li>Irrigation</li>
+                    <li>Dairy</li>
+                    <li>Flood Control</li>
+                    <li>Estuary/Wildlife Restoration &#38; Preservation</li>
+                    <li>Fish Hatcheries</li>
+                    <li>Fish Ladders</li>
+                    <li>Tidal Conditions</li>
+                    <li>Duck Clubs (Waterfowl Preservation)</li>
+                  </ul>
+                </div>
+                <div id="ProductLine">
+                  <h3 style="color: #FFFFFF; background-color: #115393; padding-top: 5px; padding-bottom: 5px; padding-left: 7px">Products:</h3>
+                  <ul>
+                    <li>Slide Gates</li>
+                    <li>Sluice Gates</li>
+                    <li>Weir Gates</li>
+                    <li>Downward Opening Weir Gates</li>
+                    <li>Flap Gates</li>
+                    <li>In-line Gates</li>
+                    <li>Combo Gates</li>
+                    <li>Canal Gates</li>
+                    <li>Stop Gates</li>
+                    <li>Stop Logs</li>
+                    <li>Bulkhead Gates</li>
+                    <li>Radial Gates</li>
+                    <li>Telescoping Valves</li>
+                    <li>Mud Valves</li>
+                    <li>Specialty Gates</li>
+                  </ul>
+                </div>
+            <h2><b>Sustainable corrosion resistant USA-made products</b></h2>
+                Mechanical Associates produces our entire product line in Fresno, California, utilizing stainless steel and/or marine grade aluminum for all product lines. All our products are designed to be compatible with potable water while sustaining the surrounding environment.
+                <p>
+            <h2><b>Low maintenance and durability</b></h2>
+                Our corrosion-resistant material and innovatively designed products are extremely durable and reliable translating into minimal maintenance. Ultimately this saves our customers money.
+            <p>
+            <h2><b>A proven track record with a diversified and custom product range</b></h2>
+                Mechanical Associates prides ourselves on providing the highest quality product and exceeding delivery expectations. With well over 1,800 options in our product lines we can identify the right application for you or custom build to your needs.<p>
+          </div>
+      <!-- FOR A PICTURE SLIDE THING BUT THIS FORSAKEN CODE WILL BE THE DEATH OF ME -->
+      <div id="ITSATHING" style="height: 100px">
+      <div id="jssor_1" style="position: relative; top: 0px; left: 0px; overflow: hidden; visibility: hidden; margin-top: 10px; margin-bottom: 30px; display: inline-block; text-align: center">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden;">
+            <div data-p="112.50" style="display: none;">
+                  <img data-u="image" src="PictureRefs/SlideShow/DSCN0052.png" alt="Slide Gate"/>
+                  <div data-u="thumb">
+                      <img class="i" src="PictureRefs/SlideShow/thumb2.png" alt="Slide Gate thumb"/>
+                      <div class="t">Looking down</div>
+                      <div class="c"> </div>
+                  </div>
+              </div>
+              <div data-p="112.50" style="display: none;">
+                  <img data-u="image" src="PictureRefs/SlideShow/20131231_133532.png" alt="Installed Gate"/>
+                  <div data-u="thumb">
+                      <img class="i" src="PictureRefs/SlideShow/thumb1.png" alt="Installed Gate thumb"/>
+                      <div class="t">Gate installed</div>
+                      <div class="c"> </div>
+                  </div>
+              </div>
+              <div data-p="112.50" style="display: none;">
+                  <img data-u="image" src="PictureRefs/SlideShow/DSCN0071.png" alt="Shipping"/>
+                  <div data-u="thumb">
+                      <img class="i" src="PictureRefs/SlideShow/thumb3.png" alt="Shipping thumb"/>
+                      <div class="t">Shipment ready</div>
+                      <div class="c"> </div>
+                  </div>
+              </div>
+            <div data-p="112.50" style="display: none;">
+                  <img data-u="image" src="PictureRefs/SlideShow/MA009.png" alt="Something else... I dunno..."/>
+                  <div data-u="thumb">
+                      <img class="i" src="PictureRefs/SlideShow/thumb4.png" alt="This is a thing"/>
+                      <div class="t">Looking up</div>
+                      <div class="c"> </div>
+                  </div>
+              </div>
+<!--        <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/006.jpg" />
+                <div data-u="thumb">
+                    <img class="i" src="img/thumb-006.jpg" />
+                    <div class="t">Gate 5</div>
+                    <div class="c">Tab slider with auto play options</div>
+                </div>
+            </div> -->
+
+        </div>
+        <!-- Thumbnail Navigator -->
+<!--         <div data-u="thumbnavigator" class="jssort11" style="position:absolute;right:5px;top:0px;font-family:Arial, Helvetica, sans-serif;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;width:200px;height:300px;" data-autocenter="2">
+            -- Thumbnail Item Skin Begin --
+            <div data-u="slides" style="cursor: default;">
+                <div data-u="prototype" class="p">
+                    <div data-u="thumbnailtemplate" class="tp"></div>
+                </div>
+            </div>
+            -- Thumbnail Item Skin End --
+        </div> -->
+        <!-- Arrow Navigator WATCH ME AS I NAVIGATE HA HA HA HA HA -->
+        <div data-u="arrowleft" class="jssora02l" style="top: 125px; left:8px;width:55px;height:55px;"></div>
+        <div data-u="arrowright" class="jssora02r" style="top: 125px; right:8px;width:55px;height:55px;"></div>
+    </div>
+        </div>
+      </div>
+      <div data-role="footer" id="footer" data-position="fixed">
+        <div id="footerLinks">
+         <h3>
+           Follow Mechanical Associates<p>
+             <div class="Logo" style="margin-left: 0"><a href="https://www.facebook.com/Mechanical-Associates-818192508251677/"><img src="PictureRefs/Facebook.png" width="50" height="50"></img></a></div>
+             <div class="Logo"><a href="https://twitter.com/MechAssociates"><img src="PictureRefs/Twitter.png" width="50" height="50"></img></a></div>
+             <div class="Logo"><a href="https://www.linkedin.com/company/mechanical-associates"><img src="PictureRefs/LinkedIn.png" width="50" height="50"></img></a></div>
+             <div class="Logo" style="margin-right: 0"><a href="https://plus.google.com/+MechanicalAssociatesFresno/posts"><img src="PictureRefs/GooglePlus.png"></img></a></div>
+            </p>
+           </h3>
+          </div>
+        <div id="MERICA" style="margin-top: 5px">
+          <div id="logoMERICA"><img src="PictureRefs/smol.png" width="75" height="75"></img></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

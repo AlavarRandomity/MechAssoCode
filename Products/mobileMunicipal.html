@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+  <head>
+    <title>Municipal | Mechanical Associates</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- CSS stuff -->
+    <link type="text/css" rel="stylesheet" href="../mainMobileCSS.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <link rel="icon" href="../PictureRefs/MAfavicon.png">
+    <style>
+      #backTo {
+          background: #115393;
+          color: #FFFFFF;
+          text-decoration: none;
+          font-size: 12px;
+          padding: 7px;
+          margin-left: 10px;
+          border-radius: 5px;
+          font-weight: bold;
+      }
+
+      div.diffGateTypes {
+      position: relative;
+      background-color: #115393;
+      display: inline-block;
+      width: 100%;
+
+      padding-top: 0;
+
+      vertical-align: middle;
+      line-height: 60px;
+
+      border-bottom: 1px solid black;
+    }
+
+     div.diffGateTypes a {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     z-index: 10;
+
+     top: 0;
+     left: 0;
+     padding-left: 25px;
+
+     color: #FFFFFF;
+     text-decoration: none;
+    }
+    </style>
+
+    <!-- Mobile-to-Website Code Stuff -->
+        <script type="text/javascript">
+       //   <!--
+               if (screen.width >= 700 && screen.width <= 1074) {
+              document.location = "tabletMunicipal.html";
+              } else if (screen.width >= 1075) {
+              document.location = "Municipal.html";
+              }
+              //-->
+        </script>
+  </head>
+  <body>
+    <div data-role="page">
+
+      <div data-role="header" id="header">
+          <img class="company_logo" src="../PictureRefs/MechanicalAssociates_Logo.png"/>
+      </div>
+
+      <div data-role="main" class="ui-content" id="ui-content">
+      <div id="mobile_navigation">
+        <span class="links">
+          <a href="../index.html" title="Home"><div class="mobileLink" style="border-top: 2px solid #051729; border-bottom: 1px solid #051729;">Home</div></a>
+          <a href="../News.html" title="News"><div class="mobileLink" style="border-bottom: 1px solid #051729;">News and Announcements</div></a>
+          <a href="../AboutUs.html" title="About Us"><div class="mobileLink" style="border-bottom: 1px solid #051729;">About Us</div></a>
+          <a href="../Products.html" title="Products"><div class="mobileLink" style="border-bottom: 1px solid #051729;">Products</div></a>
+          <a href="../Resources.html" title="Resources"><div class="mobileLink" style="border-bottom: 1px solid #051729;">Resources</div></a>
+          <a href="../ContactUs.html" title="Contact Us"><div class="mobileLink" style="border-bottom: 2px solid #051729;">Contact Us</div></a>
+        </span>
+      </div>
+        <div id="banner">
+            <img src="../PictureRefs/productsBanner.png"></img>
+        </div>
+      <div id="mainInfo">
+          <div class="content">
+            <p>
+            <a href="../Products.html" id="backTo">&#10096; Go Back to Products</a>
+            <p>
+            <h1 style="font-family: Oswald; font-weight: 100; border-bottom: 1px solid black">Water Control Gate<br/> Product Line</h1>
+          <div id="productInfo">
+              <div class="specialProduct" title="Municipal" id="muniShow" style="display: block;">
+                 <div class="gateInfo">
+                   <center><img src="../PictureRefs/LeMuni.png" style="display: inline-block; width: 60%"/></center>
+                 </div>
+                 <div> <!-- Municipal -->
+                  <div class="diffGateTypes"><a href="Municipal/Slide-Gates.html">Slide Gates</a><br/></div>
+                  <div class="diffGateTypes"><a href="Municipal/Weir-Gates.html">Weir Gates</a><br/></div>
+                  <div class="diffGateTypes"><a href="Municipal/StopGates-StopLogs-Bulkheads.html">Stop Gates/Stop Logs/Bulkheads</a><br/></div>
+                  <div class="diffGateTypes"><a href="Municipal/Flap-Gates.html">Flap Gates</a><br/></div>
+                  <div class="diffGateTypes"><a href="Municipal/Radial-RollerGates.html">Radial &amp; Roller Gates</a><br/></div>
+                  <div class="diffGateTypes"><a href="Municipal/SpecialtyValves-Gates.html">Specialty Valves &amp; Gates</a><br/></div>
+                  <div class="diffGateTypes" style="border-bottom: 0"><a href="Municipal/CanalGates.html">US Canal Gates</a><br/></div>
+                   <p>
+                  <div style="padding-bottom: 10px"><i>And more! Contact us at sales@mechanical-associates.com for more gate products</i></div>
+                 </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div data-role="footer" id="footer" data-position="fixed">
+        <div id="footerLinks">
+         <h3>
+           Follow Mechanical Associates<p>
+             <div class="Logo" style="margin-left: 0"><a href="https://www.facebook.com/Mechanical-Associates-818192508251677/"><img src="../PictureRefs/Facebook.png" width="50" height="50"></img></a></div>
+             <div class="Logo"><a href="https://twitter.com/MechAssociates"><img src="../PictureRefs/Twitter.png" width="50" height="50"></img></a></div>
+             <div class="Logo"><a href="https://www.linkedin.com/company/mechanical-associates"><img src="../PictureRefs/LinkedIn.png" width="50" height="50"></img></a></div>
+             <div class="Logo" style="margin-right: 0"><a href="https://plus.google.com/+MechanicalAssociatesFresno/posts"><img src="../PictureRefs/GooglePlus.png"></img></a></div>
+            </p>
+           </h3>
+          </div>
+        <div id="MERICA" style="margin-top: 5px">
+          <div id="logoMERICA"><img src="../PictureRefs/smol.png" width="75" height="75"></img></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

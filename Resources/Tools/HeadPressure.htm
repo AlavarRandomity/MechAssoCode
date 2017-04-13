@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <script type="text/javascript">
+      function toPSI() {
+         var feetHead = document.getElementsByName('FeetHead')[0].value;
+         var lolMath = parseFloat(feetHead) * 0.433;
+
+         document.getElementsByName('finalPSI')[0].value= lolMath;
+      }
+
+    </script>
+  </head>
+  <body>
+    <div id="IntroFlow" style="display: block">
+      <h1 style="font-family: Oswald; margin-bottom: 0; margin-top: 30px;">Head Pressure Calculations</h1>
+        <h4 style="margin-bottom: 20px; margin-top: 0;">Put the feet head of water in the box below to find its PSI.</h4>
+    </div>
+    <div id="FlowForm" style="display: block; margin: auto;">
+        <table width="250" id="calculate">
+          <tbody>
+            <tr>
+              <td style="text-align: right">Feet Head:</td>
+              <td><input type="text" name="FeetHead" size="15" id="roughPSI"></input></td>
+            </tr>
+            <tr>
+              <td style="text-align: right"><p></p></td>
+              <td><input type="button" value="Solve" onclick="toPSI()"></input></td>
+            </tr>
+            <tr>
+              <td><p></p></td>
+              <td><p></p></td>
+            </tr>
+            <tr>
+              <td style="text-align: right">Result:</td>
+              <td><input type="text" name="finalPSI" size="15"></input></td>
+              <td style="text-align: left">PSI</td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="authorNote">
+          <p><b>NOTE:</b> One foot of water at 62&deg;F (16.67&deg;C) equals 0.433 PSI. To find the PSI for any feet of head, multiply the feet head by 0.433.</p>
+        </div>
+  </body>
+</html>

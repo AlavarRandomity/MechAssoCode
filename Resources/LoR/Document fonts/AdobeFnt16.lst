@@ -1,0 +1,109 @@
+%!Adobe-FontList 1.16
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:ArialMT
+FamilyName:Arial
+StyleName:Regular
+FullName:Arial
+MenuName:Arial
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:E:\MUNICIPAL BROCHURES\Document fonts\arial.ttf
+DataFormat:sfntData
+FileLength:773852
+FileModTime:1400483506
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Arial
+NameArray:0,Win,1,Arial
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Arial-BoldMT
+FamilyName:Arial
+StyleName:Bold
+FullName:Arial Bold
+MenuName:Arial
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:E:\MUNICIPAL BROCHURES\Document fonts\arialbd.ttf
+DataFormat:sfntData
+FileLength:750216
+FileModTime:1400483506
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Arial Bold
+NameArray:0,Win,1,Arial
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Arial-BoldItalicMT
+FamilyName:Arial
+StyleName:Bold Italic
+FullName:Arial Bold Italic
+MenuName:Arial
+StyleBits:3
+WritingScript:Roman
+OutlineFileName:E:\MUNICIPAL BROCHURES\Document fonts\arialbi.ttf
+DataFormat:sfntData
+FileLength:562728
+FileModTime:1400483506
+WeightClass:700
+WidthClass:5
+AngleClass:1
+NameArray:0,Mac,4,Arial Bold Italic
+NameArray:0,Win,1,Arial
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Arial-Black
+FamilyName:Arial
+StyleName:Black
+FullName:Arial Black
+MenuName:Arial Black
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:E:\MUNICIPAL BROCHURES\Document fonts\ariblk.ttf
+DataFormat:sfntData
+FileLength:119876
+FileModTime:1244666596
+WeightClass:900
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Arial Black
+NameArray:0,Win,1,Arial Black
+NameArray:0,Win,16,Arial
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:TimesNewRomanPSMT
+FamilyName:Times New Roman
+StyleName:Regular
+FullName:Times New Roman
+MenuName:Times New Roman
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:E:\MUNICIPAL BROCHURES\Document fonts\times.ttf
+DataFormat:sfntData
+FileLength:836020
+FileModTime:1400483506
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Times New Roman
+NameArray:0,Win,1,Times New Roman
+%EndFont
+
